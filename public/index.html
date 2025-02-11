@@ -246,6 +246,8 @@
                     Quality and affordability are an integral part of Focil’s design and construction. Whether we are
                     building a custom residence.</p>
             </div>
+           <div class="relative">
+            <div class="w-full z-[111111] h-full absolute top-0 left-0 bg-transparent"></div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper pt-10 pb-3">
 
@@ -344,6 +346,7 @@
                     </div>
                 </div>
             </div>
+           </div>
 
 
         </div>
@@ -364,45 +367,32 @@
         $('.ba-slider').beforeAfter();
 
         var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
-    spaceBetween: 20, // Kartalar orasidagi masofa
-    loop: true, // Cheksiz aylanish
-    speed: 12000, // Harakat tezligi
-    autoplay: {
-        delay: 1, // Kechikishsiz
-        disableOnInteraction: false, // Foydalanuvchi swiperga tegsa ham davom etadi
-        pauseOnMouseEnter: false, // Sichqoncha ustida to‘xtab qolmasin
-        stopOnLastSlide: false, // Oxirgi slide ga yetganda to‘xtab qolmasin
-        waitForTransition: false // Keyingi harakatni kutmasdan davom etsin
-    },
-    freeMode: true, // Erkin harakat
-    allowTouchMove: false, // Sichqoncha yoki barmoq yordamida harakatni bloklash
-    simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
-    breakpoints: {
-        320: { // Mobil (320px dan katta)
-            slidesPerView: 2, // 2 ta karta
-            spaceBetween: 20
-        },
-        1024: { // Katta ekran (1024px dan katta)
-            slidesPerView: 2, // 2 ta karta
-            spaceBetween: 20
-        },
-        1440: { // Juda katta ekranlar (1440px dan katta)
-            slidesPerView: 3.5, // 3.5 ta karta
-            spaceBetween: 25
-        }
-    }
-});
-
-// **🛠 Qo'shimcha himoya: Swiper autoplay'ni doim qayta ishga tushirish**
-swiper.on('touchEnd', function() {
-    swiper.autoplay.start(); // Mobil qurilmalarda swiperni qayta ishga tushirish
-});
-swiper.on('transitionEnd', function() {
-    swiper.autoplay.start(); // Harakat tugagandan keyin ham autoplay ishlayversin
-});
-
-
+            slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
+            spaceBetween: 20, // Kartalar orasidagi masofa
+            loop: true, // Cheksiz aylanish
+            speed: 12000, // Harakat tezligi
+            autoplay: {
+                delay: 1, // Kechikishsiz
+                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
+            },
+            freeMode: true, // Erkin harakat
+            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
+            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
+            breakpoints: {
+                320: { // Mobil (320px dan katta)
+                    slidesPerView: 1.2, // 1 ta karta
+                    spaceBetween: 20
+                },
+                1024: { // Katta ekran (1024px dan katta)
+                    slidesPerView: 2, // 3 ta karta
+                    spaceBetween: 20
+                },
+                1440: { // Juda katta ekranlar (1440px dan katta)
+                    slidesPerView: 3.5, // 4 ta karta
+                    spaceBetween: 25
+                }
+            }
+        });
         var swiper = new Swiper(".mySwiper2", {
             slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
             spaceBetween: 20, // Kartalar orasidagi masofa
@@ -421,7 +411,7 @@ swiper.on('transitionEnd', function() {
             simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
             breakpoints: {
                 320: { // Mobil (320px dan katta)
-                    slidesPerView: 2, // 1 ta karta
+                    slidesPerView: 1.2, // 1 ta karta
                     spaceBetween: 20
                 },
                 1024: { // Katta ekran (1024px dan katta)
