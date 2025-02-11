@@ -370,11 +370,13 @@
     speed: 12000, // Harakat tezligi
     autoplay: {
         delay: 1, // Kechikishsiz
-        disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
-        pauseOnMouseEnter: false, // Sichqoncha olib borilganda to‘xtamasin
+        disableOnInteraction: false, // Foydalanuvchi swiperga tegsa ham davom etadi
+        pauseOnMouseEnter: false, // Sichqoncha ustida to‘xtab qolmasin
+        stopOnLastSlide: false, // Oxirgi slide ga yetganda to‘xtab qolmasin
+        waitForTransition: false // Keyingi harakatni kutmasdan davom etsin
     },
     freeMode: true, // Erkin harakat
-    allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
+    allowTouchMove: false, // Sichqoncha yoki barmoq yordamida harakatni bloklash
     simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
     breakpoints: {
         320: { // Mobil (320px dan katta)
@@ -391,6 +393,15 @@
         }
     }
 });
+
+// **🛠 Qo'shimcha himoya: Swiper autoplay'ni doim qayta ishga tushirish**
+swiper.on('touchEnd', function() {
+    swiper.autoplay.start(); // Mobil qurilmalarda swiperni qayta ishga tushirish
+});
+swiper.on('transitionEnd', function() {
+    swiper.autoplay.start(); // Harakat tugagandan keyin ham autoplay ishlayversin
+});
+
 
         var swiper = new Swiper(".mySwiper2", {
             slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
