@@ -364,12 +364,12 @@
         $('.ba-slider').beforeAfter();
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3.5, // Har safar nechta kartani ko‘rsatish
+            slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
             spaceBetween: 20, // Kartalar orasidagi masofa
             loop: true, // Cheksiz aylanish
             speed: 12000, // Harakat tezligi
             autoplay: {
-                delay: 0, // Kechikishsiz
+                delay: 1, // Kechikishsiz
                 disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
             },
             freeMode: true, // Erkin harakat
@@ -391,16 +391,19 @@
             }
         });
         var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 3.5, // Har safar nechta kartani ko‘rsatish
+            slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
             spaceBetween: 20, // Kartalar orasidagi masofa
             loop: true, // Cheksiz aylanish
             speed: 12000, // Harakat tezligi
             autoplay: {
-                delay: 0, // Kechikishsiz
+                delay: 1, // Kechikishsiz
                 disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
                 reverseDirection: true, // O‘ng tarafga aylanish
             },
-            freeMode: true, // Erkin harakat
+            freeMode: {
+                enabled: true,
+                momentum: false,
+            },
             allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
             simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
             breakpoints: {
