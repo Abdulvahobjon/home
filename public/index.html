@@ -31,7 +31,7 @@
 <body>
 
 
-    <div class="bg-red-200" style="background-color: blackad; background-image: url(./img/hero/hero.png); background-size: cover; ">
+    <div class="bg-black" style="background-color: blackad; background-image: url(./img/hero/hero.png); background-size: cover; ">
         <header class="py-3 md:py-5 border-b border-white/30">
             <div class="max-w-[1840px] mx-auto px-5 flex items-center justify-between">
                 <a href="#" class="flex">
@@ -370,13 +370,13 @@
             <div class="w-full max-w-[891px] mt-12 md:mt-0">
                 <form class="flex flex-col">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5 w-full">
-                        <input type="text" placeholder="Phone number"
+                        <input required type="tel" placeholder="Phone number"
                             class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none">
-                        <input type="text" placeholder="Full name"
+                        <input required type="text" placeholder="Full name"
                             class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none">
                     </div>
     
-                    <textarea placeholder="Describe Your Project" rows="1"
+                    <textarea required placeholder="Describe Your Project" rows="1"
                         class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none"></textarea>
     
                     <button
