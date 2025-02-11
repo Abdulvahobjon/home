@@ -364,32 +364,34 @@
         $('.ba-slider').beforeAfter();
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
-            spaceBetween: 20, // Kartalar orasidagi masofa
-            loop: true, // Cheksiz aylanish
-            speed: 12000, // Harakat tezligi
-            autoplay: {
-                delay: 1, // Kechikishsiz
-                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
-            },
-            freeMode: true, // Erkin harakat
-            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
-            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
-            breakpoints: {
-                320: { // Mobil (320px dan katta)
-                    slidesPerView: 2, // 1 ta karta
-                    spaceBetween: 20
-                },
-                1024: { // Katta ekran (1024px dan katta)
-                    slidesPerView: 2, // 3 ta karta
-                    spaceBetween: 20
-                },
-                1440: { // Juda katta ekranlar (1440px dan katta)
-                    slidesPerView: 3.5, // 4 ta karta
-                    spaceBetween: 25
-                }
-            }
-        });
+    slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
+    spaceBetween: 20, // Kartalar orasidagi masofa
+    loop: true, // Cheksiz aylanish
+    speed: 12000, // Harakat tezligi
+    autoplay: {
+        delay: 1, // Kechikishsiz
+        disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
+        pauseOnMouseEnter: false, // Sichqoncha olib borilganda to‘xtamasin
+    },
+    freeMode: true, // Erkin harakat
+    allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
+    simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
+    breakpoints: {
+        320: { // Mobil (320px dan katta)
+            slidesPerView: 2, // 2 ta karta
+            spaceBetween: 20
+        },
+        1024: { // Katta ekran (1024px dan katta)
+            slidesPerView: 2, // 2 ta karta
+            spaceBetween: 20
+        },
+        1440: { // Juda katta ekranlar (1440px dan katta)
+            slidesPerView: 3.5, // 3.5 ta karta
+            spaceBetween: 25
+        }
+    }
+});
+
         var swiper = new Swiper(".mySwiper2", {
             slidesPerView: 1.2, // Har safar nechta kartani ko‘rsatish
             spaceBetween: 20, // Kartalar orasidagi masofa
