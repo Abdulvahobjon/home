@@ -5,23 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loyiha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+    <!-- swipper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- after before js  -->
+    <link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/before-after.css">
 </head>
 
 <body>
 
 
     <div style="background-image: url(./img/hero/hero.png); background-size: cover; background-color: black/90;">
-        <header class="py-4 md:py-5 border-b border-white/30">
+        <header class="py-3 md:py-5 border-b border-white/30">
             <div class="max-w-[1840px] mx-auto px-5 flex items-center justify-between">
                 <a href="#" class="flex">
                     <img src="./img/header/logo.svg" alt="header logo">
                 </a>
-    
+
                 <ul class="md:flex gap-8 hidden">
                     <li><a class="text-white text-[11px]" href="#">Home</a></li>
                     <li><a class="text-white text-[11px]" href="#">Services</a></li>
@@ -31,19 +44,26 @@
                     <li><a class="text-white text-[11px]" href="#">Trades</a></li>
                     <li><a class="text-white text-[11px]" href="#">Contact Us</a></li>
                 </ul>
-                <button class="md:hidden block"><svg width="24" fill="white" xmlns="http://www.w3.org/2000/svg"
+                <button id="headerHamburgerBtm" class="md:hidden block"><svg width="24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg></button>
             </div>
-            <div class="fixed top-0 left-0 w-[86%] h-full bg-gray-500 flex items-center justify-center">
-                <button class="md:hidden block absolute top-8 right-5"><svg width="24" fill="white" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path
-                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-                </svg></button>
-                <ul class="flex flex-col justify-center items-center  gap-8">
+            <div id="overlay" class="w-full md:hidden h-full bg-black/70 fixed top-0 left-[-100%] z-10">
+
+            </div>
+            <div id="rasponsiveMenu"
+                class="fixed md:hidden z-20 flex top-0 left-[-100%] w-[76%] h-full bg-[#2B2724]  items-center justify-center transition-all">
+
+                <button id="headerCloseBtn" class="md:hidden block absolute top-8 right-5"><svg width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></button>
+                <ul class="flex mb-20 flex-col justify-center items-center  gap-8">
                     <li><a class="text-white text-[11px]" href="#">Home</a></li>
                     <li><a class="text-white text-[11px]" href="#">Services</a></li>
                     <li><a class="text-white text-[11px]" href="#">Kitchen Showroom</a></li>
@@ -54,23 +74,356 @@
                 </ul>
             </div>
         </header>
-    
-        <section class="lg:pt-[272px] pt-[120px] md:pt-[180px] pb-[140px] lg:pb-[213px] md:pb-[150px]">
+
+        <section class="lg:pt-[272px] pt-[80px] md:pt-[180px] pb-[120px] lg:pb-[213px] md:pb-[150px]">
             <div class="max-w-[1646px] mx-auto px-5">
-                <h2 class="max-w-[1082px] font-normal text-[40px] md:text-[60px] leading-tight md:leading-[72px] text-[#FFFFFF] mb-2">We specialize in exquisite selections of natural stone, sintered stone, porcelain, and quartz slab.</h2>
-                <p class="max-w-[500px] font-normal text-[17px] leading-[30px] text-white mb-10">Quality and affordability are an integral part of Focil’s design and
+                <h2
+                    class="max-w-[1082px] font-normal text-[30px] md:text-[60px] leading-tight md:leading-[72px] text-[#FFFFFF] mb-2">
+                    We specialize in exquisite selections of natural stone, sintered stone, porcelain, and quartz slab.
+                </h2>
+                <p
+                    class="max-w-[500px] font-normal text-sm md:text-[17px] leading-normal md:leading-[30px] text-white mb-6 md:mb-10">
+                    Quality and affordability are an integral part of Focil’s design and
                     construction. Whether we are building a custom residence.</p>
                 <div class="flex gap-4">
-                    <a class="w-[180px] md:w-[251px] py-5 font-medium text-base leading-6 text-black bg-[#FEC813] text-center uppercase" href="">About US</a>
-                    <a class="w-[180px] md:w-[251px] py-5 font-medium text-base leading-6 bg-[#fff]/10 text-center text-white uppercase" href="">Contact us</a>
+                    <a class="w-[180px] md:w-[251px] py-3 md:py-5 font-medium text-base leading-6 text-black bg-[#FEC813] text-center uppercase"
+                        href="">About US</a>
+                    <a class="w-[180px] md:w-[251px] py-3 md:py-5 font-medium text-base leading-6 bg-[#fff]/10 text-center text-white uppercase"
+                        href="">Contact us</a>
                 </div>
             </div>
         </section>
     </div>
 
+    <section class="md:pt-[171px] pt-[50px] md:pb-[271px] pb-[80px] relative overflow-hidden">
+        <img class="absolute 2xl:max-w-full max-w-[2195px] w-full top-9 right-0" src="./img/kitchen/line-1.svg" alt="">
+        <img class="absolute 2xl:max-w-full w-full bottom-0 2xl:right-0 -right-[119px]" src="./img/kitchen/line-2.svg"
+            alt="">
+        <div class="max-w-[1280px] mx-auto px-5">
+            <h2 class="font-normal text-[40px] md:text-[60px] md:leading-[72px] text-black md:text-center mb-2">Your
+                Dream Kitchen Awaits</h2>
+            <p class="font-normal text-base md:leading-[30px] md:text-center max-w-[641px] mx-auto mb-10">Quality and
+                affordability are an integral part of Focil’s design and construction. Whether we are building a custom
+                residence.</p>
+            <div class="h-[260px] md:h-[641px] flex relative">
+
+                <div class="w-[140px] h-[140px] bg-[#FEC813] absolute -bottom-2 -left-2"></div>
+                <div class="w-[140px] h-[140px] bg-[#FEC813] absolute -top-2 -right-2"></div>
+                <iframe class="w-full h-full relative z-20" width="560" height="315"
+                    src="https://www.youtube.com/embed/4YnRu6GqTBA?si=U1eGnXwNxyqEpCnt" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="section" class="bg-[#FFFAEA] md:pt-[61px] pt-[50px] md:pb-[147px] pb-[80px]">
+        <div class="max-w-[1650px] px-4 text-center mx-auto">
+            <div class="md:text-center text-left">
+                <h2 class="text-[40px] md:text-[60px]">Our Services</h2>
+                <p class="mt-3 text-4 max-w-3xl mx-auto">
+                    Quality and affordability are an integral part of Focil’s design and construction.
+                    Whether we are building a custom residence.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="text-left">
+                    <div class="w-full overflow-hidden" style="aspect-ratio: 397 / 402;">
+                        <img src="img/services/service.png" alt="Service" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-5 text-[32px] font-semibold">Our Services</h3>
+                    <p class="mt-2 text-4 leading-[1.8]">
+                        Quality and affordability are an integral part of Focil’s design and construction.
+                    </p>
+                </div>
+
+                <div class="text-left">
+                    <div class="w-full overflow-hidden" style="aspect-ratio: 397 / 402;">
+                        <img src="img/services/service.png" alt="Service" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-5 text-[32px] font-semibold">Our Services</h3>
+                    <p class="mt-2 text-4 leading-[1.8]">
+                        Quality and affordability are an integral part of Focil’s design and construction.
+                    </p>
+                </div>
+
+                <div class="text-left">
+                    <div class="w-full overflow-hidden" style="aspect-ratio: 397 / 402;">
+                        <img src="img/services/service.png" alt="Service" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-5 text-[32px] font-semibold">Our Services</h3>
+                    <p class="mt-2 text-4 leading-[1.8]">
+                        Quality and affordability are an integral part of Focil’s design and construction.
+                    </p>
+                </div>
+
+                <div class="text-left">
+                    <div class="w-full overflow-hidden" style="aspect-ratio: 397 / 402;">
+                        <img src="img/services/service.png" alt="Service" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-5 text-[32px] font-semibold">Our Services</h3>
+                    <p class="mt-2 text-4 leading-[1.8]">
+                        Quality and affordability are an integral part of Focil’s design and construction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="md:pt-[171px] pt-[50px] md:pb-[203px] pb-[80px] relative overflow-hidden">
+        <div class="max-w-[1647px] mx-auto px-5">
+            <h2 class="font-normal text-[40px] md:text-[60px] md:leading-[72px] text-black md:text-center mb-2">Your
+                Dream Kitchen Awaits</h2>
+            <p class="font-normal text-base md:leading-[30px] md:text-center max-w-[641px] mx-auto mb-16">Quality and
+                affordability are an integral part of Focil’s design and construction. Whether we are building a custom
+                residence.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-14 gap-x-5">
+                <div class="w-full bg-[#FEC813] pt-[60px] md:pt-[140px] px-5 md:px-10 pb-10 md:pb-12 relative">
+                    <span style="font-family: Herr Von Muellerhoff;"
+                        class="font-normal  text-[120px] md:text-[200px] leading-[200px] text-black absolute -top-[90px] left-10">1</span>
+                    <h3 class="font-semibold text-2xl md:text-[32px] md:leading-10 text-black mb-2">We Use a Proven
+                        System</h3>
+                    <p class="font-normal text-sm md:text-xl md:leading-[30px]">Using checklists, policies, and
+                        procedures developed over the last 30+ years, we take a systematic approach to the entire
+                        remodeling process. From the initial phone call or showroom visit to the final inspection and
+                        walk through, you can rest assured that every aspect of the process will be taken care of
+                        professionally. </p>
+                </div>
+                <div class="w-full bg-[#FEC813] pt-[60px] md:pt-[140px] px-5 md:px-10 pb-10 md:pb-12 relative">
+                    <span style="font-family: Herr Von Muellerhoff;"
+                        class="font-normal  text-[120px] md:text-[200px] leading-[200px] text-black absolute -top-[90px] left-10">2</span>
+                    <h3 class="font-semibold text-2xl md:text-[32px] md:leading-10 text-black mb-2">We Use a Proven
+                        System</h3>
+                    <p class="font-normal text-sm md:text-xl md:leading-[30px]">Using checklists, policies, and
+                        procedures developed over the last 30+ years, we take a systematic approach to the entire
+                        remodeling process. From the initial phone call or showroom visit to the final inspection and
+                        walk through, you can rest assured that every aspect of the process will be taken care of
+                        professionally. </p>
+                </div>
+                <div class="w-full bg-[#FEC813] pt-[60px] md:pt-[140px] px-5 md:px-10 pb-10 md:pb-12 relative">
+                    <span style="font-family: Herr Von Muellerhoff;"
+                        class="font-normal  text-[120px] md:text-[200px] leading-[200px] text-black absolute -top-[90px] left-10">3</span>
+                    <h3 class="font-semibold text-2xl md:text-[32px] md:leading-10 text-black mb-2">We Use a Proven
+                        System</h3>
+                    <p class="font-normal text-sm md:text-xl md:leading-[30px]">Using checklists, policies, and
+                        procedures developed over the last 30+ years, we take a systematic approach to the entire
+                        remodeling process. From the initial phone call or showroom visit to the final inspection and
+                        walk through, you can rest assured that every aspect of the process will be taken care of
+                        professionally. </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="">
+            <div class="px-5">
+                <h2 class="font-normal text-[40px] md:text-[60px] md:leading-[72px] text-black md:text-center mb-2">
+                    Enjoy Falling Back in Love with Your Home </h2>
+                <p class="font-normal text-base md:leading-[30px] md:text-center max-w-[641px] mx-auto md:mb-12 mb-8">
+                    Quality and affordability are an integral part of Focil’s design and construction. Whether we are
+                    building a custom residence.</p>
+            </div>
+            <div class="ba-slider h-[50vh] md:h-[80vh]">
+                <img class="w-full h-full object-cover object-top" src="./img/Enjoy/1.png">
+                <div class="resize">
+                    <img class="w-full h-full object-cover object-top" src="./img/Enjoy/2.png">
+                </div>
+                <span class="handle"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[60px] md:py-[180px] ">
+        <div>
+            <div class="px-5">
+                <h2 class="font-normal text-[40px] md:text-[60px] leading-none md:leading-[72px] text-black md:text-center mb-2">
+                    Enjoy Falling Back in Love with Your Home </h2>
+                <p class="font-normal text-base md:leading-[30px] md:text-center max-w-[641px] mx-auto md:mb-5 mb-0">
+                    Quality and affordability are an integral part of Focil’s design and construction. Whether we are
+                    building a custom residence.</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper pt-10 pb-3">
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper pb-10 pt-3">
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+
+                    <div class="px-5 md:px-10 py-5 md:py-8 swiper-slide" style="box-shadow: 0px 4px 32px 0px #0000001A;">
+                        <p class="font-light text-sm md:text-xl md:leading-[30px] text-black mb-2 md:mb-4"><i>“Using checklists, policies,
+                                and procedures developed over the last 30+ years, we take a systematic approach to
+                                the entire remodeling process. From the initial phone call or showroom visit to the
+                                final inspection and walk through, you can rest assured that every aspect of the
+                                process will be taken care of professionally. ”</i></p>
+                        <b class="font-semibold text-lg md:text-2xl md:leading-[30px] text-black">James Oliver</b>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
     <!-- Swiper JS -->
     <script src="./js/app.js"></script>
+
+    <!-- jQUERY -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- 
+    // after before js -->
+    <script type="text/javascript" src="./js/before-after.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        $('.ba-slider').beforeAfter();
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3.5, // Har safar nechta kartani ko‘rsatish
+            spaceBetween: 20, // Kartalar orasidagi masofa
+            loop: true, // Cheksiz aylanish
+            speed: 12000, // Harakat tezligi
+            autoplay: {
+                delay: 0, // Kechikishsiz
+                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
+            },
+            freeMode: true, // Erkin harakat
+            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
+            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
+            breakpoints: {
+                320: { // Mobil (320px dan katta)
+                    slidesPerView: 1.4, // 1 ta karta
+                    spaceBetween: 20
+                },
+                1024: { // Katta ekran (1024px dan katta)
+                    slidesPerView: 2, // 3 ta karta
+                    spaceBetween: 20
+                },
+                1440: { // Juda katta ekranlar (1440px dan katta)
+                    slidesPerView: 3.5, // 4 ta karta
+                    spaceBetween: 25
+                }
+            }
+        });
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3.5, // Har safar nechta kartani ko‘rsatish
+            spaceBetween: 20, // Kartalar orasidagi masofa
+            loop: true, // Cheksiz aylanish
+            speed: 12000, // Harakat tezligi
+            autoplay: {
+                delay: 0, // Kechikishsiz
+                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
+                reverseDirection: true, // O‘ng tarafga aylanish
+            },
+            freeMode: true, // Erkin harakat
+            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
+            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
+            breakpoints: {
+                320: { // Mobil (320px dan katta)
+                    slidesPerView: 1.4, // 1 ta karta
+                    spaceBetween: 20
+                },
+                1024: { // Katta ekran (1024px dan katta)
+                    slidesPerView: 2, // 3 ta karta
+                    spaceBetween: 20
+                },
+                1240: { // Juda katta ekranlar (1440px dan katta)
+                    slidesPerView: 3.5, // 4 ta karta
+                    spaceBetween: 25
+                }
+            }
+        });
+
+
+    </script>
+
+
+
 
 </body>
 
