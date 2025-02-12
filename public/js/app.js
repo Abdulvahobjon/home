@@ -1,6 +1,6 @@
 
 
-function headerMenu () {
+function headerMenu() {
   let headerHamburgerBtm = document.querySelector('#headerHamburgerBtm')
   let rasponsiveMenu = document.querySelector('#rasponsiveMenu')
   let headerCloseBtn = document.querySelector('#headerCloseBtn')
@@ -37,6 +37,17 @@ function headerMenu () {
   })
 }
 
-if(document.querySelector('#headerHamburgerBtm')){
-    headerMenu()
+function playVideo() {
+  const video = document.getElementById("video");
+  const playButton = document.getElementById("playButton");
+
+  playButton.addEventListener("click", function () {
+    video.setAttribute("controls", "");
+    video.classList.remove("brightness-75");
+    playButton.style.display = "none";
+    video.play();
+  });
 }
+
+document.querySelector('#headerHamburgerBtm') && headerMenu();
+document.querySelector('#playButton') && playVideo();
