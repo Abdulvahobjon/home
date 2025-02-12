@@ -121,9 +121,10 @@
             <div class="mx-auto max-w-full md:max-h-[550px] aspect-[560/315] flex relative">
                 <div class="w-[140px] h-[140px] bg-[#FEC813] absolute -bottom-2 -left-2"></div>
                 <div class="w-[140px] h-[140px] bg-[#FEC813] absolute -top-2 -right-2"></div>
-                <video onmouseenter="event.target.setAttribute('preload','metadata')"
-                    class="w-full h-full relative z-20" preload="none" src="video/kitchen.mp4"
-                    controls loading="lazy"></video>
+                <video id="video" onmouseenter="event.target.setAttribute('preload','metadata')"
+                    class="w-full h-full relative z-20 brightness-75" preload="none" src="video/kitchen.mp4"
+                    loading="lazy" poster="img/video-related/video-thumbnail.png"></video>
+                <img id="playButton" class="absolute z-30 cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="img/video-related/play.svg" alt="play video button">
             </div>
         </div>
     </section>
