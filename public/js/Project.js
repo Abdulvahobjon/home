@@ -1,4 +1,9 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+  AOS.init();
+});
 var swiper = new Swiper(".mySwiper", {
+  autoHeight: true,
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination1",
     clickable: true,
