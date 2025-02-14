@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+    <!-- swipper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- after before js  -->
+    <link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/before-after.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Projects</title>
+
+    <style>
+        .swiper-pagination-bullet {
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            line-height: 24px !important;
+            color: #000000 !important;
+            min-width: 100px !important;
+            text-align: center !important;
+            display: flex;
+            padding: 12px 24px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF !important;
+            border-radius: 0 !important;
+            width: 100% !important;
+            min-height: 48px;
+        }
+
+        .swiper-pagination-bullet-active {
+            border-bottom-width: 5px !important;
+            border-bottom-color: #FEC813 !important;
+            background-color: #FFFFFF !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-black"
+        style="background-color: blackad; background-image: url(./img/Project/bg.png); background-size: cover; background-position: center, center;">
+        <header id="navbar" class="py-3 md:py-5 border-b border-white/30">
+            <div class="max-w-[1840px] mx-auto px-5 flex items-center justify-between">
+                <a href="#" class="flex">
+                    <img src="./img/header/logo.svg" alt="header logo">
+                </a>
+
+                <ul class="lg:flex gap-8 hidden">
+                    <li><a class="text-white text-[16px]" href="./index.html">Home</a></li>
+                    <li><a class="text-white text-[16px]" href="./service2.html">Services</a></li>
+                    <li><a class="text-white text-[16px]" href="./Projects.html">Projects</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Kitchen Showroom</a></li>
+                    <li><a class="text-white text-[16px]" href="./gallery.html">Gallery</a></li>
+                    <li><a class="text-white text-[16px]" href="./testimonials.html">Testimonials</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Trades</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Contact Us</a></li>
+                </ul>
+                <button id="headerHamburgerBtm" class="md:hidden block"><svg width="24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg></button>
+            </div>
+            <div id="overlay" class="w-full lg:hidden h-full bg-black/70 fixed top-0 left-[-100%] z-10">
+
+            </div>
+            <div id="rasponsiveMenu"
+                class="fixed md:hidden z-20 flex top-0 left-[-100%] w-[76%] h-full bg-[#2B2724]  items-center justify-center transition-all">
+                <button id="headerCloseBtn" class="md:hidden block absolute top-8 right-5"><svg width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></button>
+                <ul class="flex mb-20 flex-col justify-center items-center  gap-8">
+                    <li><a class="text-white text-[16px]" href="#">Home</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Services</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Kitchen Showroom</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Gallery</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Testimonials</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Trades</a></li>
+                    <li><a class="text-white text-[16px]" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="lg:pt-[159px] pt-[80px] md:pt-[159px] pb-[80px] lg:pb-[115px] md:pb-[100px]">
+            <div class="max-w-[1646px] mx-auto px-5 text-center">
+                <h2
+                    class="font-medium text-[30px] md:text-[60px] leading-tight md:leading-[72px] text-[#FFFFFF] mb-2 md:mb-2">
+                    Projects
+                </h2>
+                <p
+                    class="max-w-[834px] mx-auto font-normal text-xl md:text-[30px] leading-normal md:leading-[36px] text-white mb-6 md:mb-10">
+                    Quality and affordability are an integral part of Focil’s design and
+                    construction. Whether we are building a custom residence.
+                </p>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="pt-[52px] pb-[43px] max-md:py-8">
+        <div
+            class="max-w-[454px] px-5 w-full mx-auto grid grid-cols-4 max-[425px]:flex max-[425px]:flex-wrap max-[425px]:justify-center">
+            <div class="swiper-pagination1 flex w-full"></div>
+        </div>
+    </section>
+    <section class="pb-[160px] max-lg:pb-[100px] max-md:pb-[80px] max-[425px]:pb-[60px] bg-[#FFFFFF]">
+        <div class="max-w-[1690px] w-full mx-auto px-5 ">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="Images"
+                            class="grid grid-cols-4 gap-5 max-xl:grid-cols-3 max-[920px]:grid-cols-2 max-[425px]:grid-cols-1 max-[425px]:gap-4">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="News"
+                            class="grid grid-cols-4 gap-x-5 gap-y-14 max-xl:grid-cols-3 max-[920px]:grid-cols-2 max-[425px]:grid-cols-1 max-[425px]:gap-4">
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                            <div class="w-full">
+                                <img src="./img/Project/kitchenNews.png" alt="" class="mb-[23px] w-full object-cover">
+                                <h3 class="font-semibold text-[32px] leading-10 text-[#000000] mb-2 max-md:text-2xl">
+                                    News</h3>
+                                <p class="font-normal text-base text-[#000000] leading-[30px] max-md:leading-5">Quality
+                                    and
+                                    affordability are an integral part of Focil’s design and</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="Gallery">
+                            <div class="grid grid-cols-2 gap-5 max-md:gap-3 max-lg:grid-cols-1">
+                                <div class="grid grid-cols-1 gap-5 max-md:gap-3">
+                                    <div>
+                                        <img src="./img/Project/kitchen.png" alt=""
+                                            class="w-full object-cover max-h-[542px]">
+                                        <div class="grid grid-cols-2 max-md:mt-3 mt-5 gap-5 max-md:gap-1">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="./img/Project/kitchen.png" alt=""
+                                            class="w-full object-cover max-h-[261px]">
+                                        <div class="grid grid-cols-2 max-md:mt-3 mt-5 gap-5 max-md:gap-1">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 gap-5 max-md:gap-3">
+                                    <div>
+                                        <img src="./img/Project/kitchen.png" alt=""
+                                            class="w-full object-cover max-h-[261px]">
+                                        <div class="grid grid-cols-2 max-md:mt-3 mt-5 gap-5 max-md:gap-1">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="grid grid-cols-2  gap-5 max-md:gap-1">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                            <img src="./img/Project/kitchen.png" alt=""
+                                                class="w-full object-cover max-h-[261px]">
+                                        </div>
+                                        <img src="./img/Project/kitchen.png" alt=""
+                                            class="w-full object-cover max-md:mt-3 mt-5 max-h-[542px]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="Images"
+                            class="grid grid-cols-4 gap-5 max-xl:grid-cols-3 max-[920px]:grid-cols-2 max-[425px]:grid-cols-1 max-[425px]:gap-4">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                            <img src="./img/Project/kitchen.png" alt="kitchen" class="w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/Project.js"></script>
+</body>
+
+</html>
