@@ -36,47 +36,66 @@
 
     <div class="bg-black"
         style="background-color: blackad; background-image: url(./img/services/bg.png); background-size: cover; background-position: center, center;">
-        <header id="navbar" class="py-3 md:py-5 border-b border-white/30">
+        <header id="navbar"
+            class="py-3 md:py-5 border-b border-white/30 fixed top-0 left-0 w-full z-[11111111] transition-all duration-300">
             <div class="max-w-[1840px] mx-auto px-5 flex items-center justify-between">
-                <a href="#" class="flex">
+                <a href="./" class="flex">
                     <img src="./img/header/logo.svg" alt="header logo">
                 </a>
-
                 <ul class="lg:flex gap-8 hidden">
                     <li><a class="text-white text-[16px]" href="./index.html">Home</a></li>
+
                     <li><a class="text-white text-[16px]" href="./service2.html">Services</a></li>
                     <li><a class="text-white text-[16px]" href="./Projects.html">Projects</a></li>
                     <li><a class="text-white text-[16px]" href="#">Kitchen Showroom</a></li>
                     <li><a class="text-white text-[16px]" href="./gallery.html">Gallery</a></li>
+                    <li><a class="text-white text-[16px]" href="./service.html">Service</a></li>
                     <li><a class="text-white text-[16px]" href="./testimonials.html">Testimonials</a></li>
                     <li><a class="text-white text-[16px]" href="#">Trades</a></li>
                     <li><a class="text-white text-[16px]" href="./Contact.html">Contact Us</a></li>
+                    <li><a class="text-white text-[16px]" href="tel:+18053239515"> (805) 323-9515</a></li>
+                    <li><a target="_blank" class="text-white  flex items-center"
+                            href="https://www.instagram.com/luxiomerstonegallery/"><i class="fa-brands fa-instagram"
+                                style="color: #ffffff; font-size: 24px;"></i></a></li>
+
                 </ul>
-                <button id="headerHamburgerBtm" class="md:hidden block"><svg width="24" fill="white"
+                <button id="headerHamburgerBtm" class="lg:hidden block"><svg width="24" fill="white"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg></button>
             </div>
+            <div id="overlay" class="w-full lg:hidden h-full bg-black/70 fixed top-0 left-[-100%] z-10">
+
+            </div>
             <div id="rasponsiveMenu"
-                class="fixed md:hidden z-20 flex top-0 left-[-100%] w-[76%] h-full bg-[#2B2724]  items-center justify-center transition-all">
-                <button id="headerCloseBtn" class="md:hidden block absolute top-8 right-5"><svg width="24"
+                class="fixed lg:hidden z-20 flex top-0  w-[76%] h-full bg-[#2B2724]  items-start justify-center transition-all">
+
+                <button id="headerCloseBtn" class="lg:hidden block absolute top-5 right-5"><svg width="24"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                         <path fill="#ffffff"
                             d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                     </svg></button>
-                    <ul class="flex mb-20 flex-col justify-center items-center  gap-8">
-                        <li><a class="text-white text-[16px]" href="./index.html">Home</a></li>
-                        <li><a class="text-white text-[16px]" href="./service2.html">Services</a></li>
-                        <li><a class="text-white text-[16px]" href="./Projects.html">Projects</a></li>
-                        <li><a class="text-white text-[16px]" href="#">Kitchen Showroom</a></li>
-                        <li><a class="text-white text-[16px]" href="./gallery.html">Gallery</a></li>
-                        <li><a class="text-white text-[16px]" href="./testimonials.html">Testimonials</a></li>
-                        <li><a class="text-white text-[16px]" href="#">Trades</a></li>
-                        <li><a class="text-white text-[16px]" href="./Contact.html">Contact Us</a></li>
-                    </ul>
+                <ul class="flex p-4 w-full flex-col pt-24 justify-center items-center">
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./index.html">Home</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./service2.html">Services</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./Projects.html">Projects</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="#">Kitchen Showroom</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./gallery.html">Gallery</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./testimonials.html">Testimonials</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="#">Trades</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./Contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </header>
 

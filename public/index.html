@@ -37,7 +37,7 @@
     <div class="bg-black"
         style="background-color: blackad; background-image: url(./img/hero/hero.png); background-size: cover; ">
         <header id="navbar"
-            class="py-3 md:py-5 border-b border-white/30 fixed top-0 left-0 w-full z-50 transition-all duration-300">
+            class="py-3 md:py-5 border-b border-white/30 fixed top-0 left-0 w-full z-[11111111] transition-all duration-300">
             <div class="max-w-[1840px] mx-auto px-5 flex items-center justify-between">
                 <a href="./" class="flex">
                     <img src="./img/header/logo.svg" alt="header logo">
@@ -49,9 +49,15 @@
                     <li><a class="text-white text-[16px]" href="./Projects.html">Projects</a></li>
                     <li><a class="text-white text-[16px]" href="#">Kitchen Showroom</a></li>
                     <li><a class="text-white text-[16px]" href="./gallery.html">Gallery</a></li>
+                    <li><a class="text-white text-[16px]" href="./service.html">Service</a></li>
                     <li><a class="text-white text-[16px]" href="./testimonials.html">Testimonials</a></li>
                     <li><a class="text-white text-[16px]" href="#">Trades</a></li>
                     <li><a class="text-white text-[16px]" href="./Contact.html">Contact Us</a></li>
+                    <li><a class="text-white text-[16px]" href="tel:+18053239515"> (805) 323-9515</a></li>
+                    <li><a target="_blank" class="text-white  flex items-center"
+                            href="https://www.instagram.com/luxiomerstonegallery/"><i class="fa-brands fa-instagram"
+                                style="color: #ffffff; font-size: 24px;"></i></a></li>
+
                 </ul>
                 <button id="headerHamburgerBtm" class="lg:hidden block"><svg width="24" fill="white"
                         xmlns="http://www.w3.org/2000/svg"
@@ -72,16 +78,24 @@
                         <path fill="#ffffff"
                             d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                     </svg></button>
-                    <ul class="flex p-4 w-full flex-col pt-24 justify-center items-center">
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="./index.html">Home</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="./service2.html">Services</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="./Projects.html">Projects</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="#">Kitchen Showroom</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="./gallery.html">Gallery</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="./testimonials.html">Testimonials</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="#">Trades</a></li>
-                        <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3" href="./Contact.html">Contact Us</a></li>
-                    </ul>
+                <ul class="flex p-4 w-full flex-col pt-24 justify-center items-center">
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./index.html">Home</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./service2.html">Services</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./Projects.html">Projects</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="#">Kitchen Showroom</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./gallery.html">Gallery</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./testimonials.html">Testimonials</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="#">Trades</a></li>
+                    <li class="w-full"><a class="text-white text-[16px] border-t-[1px] border-[#ffffff1a] block py-3"
+                            href="./Contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </header>
 
@@ -135,7 +149,7 @@
                     class="w-full h-full relative z-20 brightness-75" preload="none" src="video/kitchen.mp4"
                     loading="lazy" poster="img/video-related/video-thumbnail.png"></video>
                 <img id="playButton"
-                    class="absolute z-30 cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    class="absolute z-30 w-[100px] md:w-[227px] cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     src="img/video-related/play.svg" alt="play video button">
             </div>
         </div>
@@ -159,43 +173,49 @@
                         Tailored designs crafted to fit your home and lifestyle perfectly.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="250">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
-                        <img src="img/services/kitchen remodelling.jpg" alt="Service" class="w-full h-full object-cover">
+                        <img src="img/services/kitchen remodelling.jpg" alt="Service"
+                            class="w-full h-full object-cover">
                     </div>
                     <h3 class="mt-5 text-[32px] font-semibold"><a
-                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all" href="#">Kitchen Remodeling</a>
+                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all"
+                            href="#">Kitchen Remodeling</a>
                     </h3>
                     <p class="mt-2 text-4 leading-[1.8]">
                         Transforming kitchens into stunning, functional spaces with expert craftsmanship.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
-                        <img src="img/services/bathroom remodelilng.jpg" alt="Service" class="w-full h-full object-cover">
+                        <img src="img/services/bathroom remodelilng.jpg" alt="Service"
+                            class="w-full h-full object-cover">
                     </div>
                     <h3 class="mt-5 text-[32px] font-semibold"><a
-                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all" href="#">Bathroom
+                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all"
+                            href="#">Bathroom
                             Remodeling</a></h3>
                     <p class="mt-2 text-4 leading-[1.8]">
                         Bringing luxury and comfort to your bathroom with high-quality materials and design.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="350">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
-                        <img src="img/services/schedule a consultation.jpg" alt="Service" class="w-full h-full object-cover">
+                        <img src="img/services/schedule a consultation.jpg" alt="Service"
+                            class="w-full h-full object-cover">
                     </div>
                     <h3 class="mt-5 text-[32px] font-semibold"><a
-                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all" href="#">Interior
+                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all"
+                            href="#">Interior
                             Remodeling</a></h3>
                     <p class="mt-2 text-4 leading-[1.8]">
                         Enhancing your home’s style and functionality with custom interior renovations.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="400">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
                         <img src="img/services/garage conversions.jpg" alt="Service" class="w-full h-full object-cover">
@@ -207,19 +227,21 @@
                         Maximizing your space by turning your garage into a beautiful, usable living area.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="450">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
-                        <img src="img/services/Accessory Dwelling Units.jpg" alt="Service" class="w-full h-full object-cover">
+                        <img src="img/services/Accessory Dwelling Units.jpg" alt="Service"
+                            class="w-full h-full object-cover">
                     </div>
                     <h3 class="mt-5 text-[32px] font-semibold"><a
-                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all" href="#">Accessory Dwelling
+                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all"
+                            href="#">Accessory Dwelling
                             Units (ADUs)</a></h3>
                     <p class="mt-2 text-4 leading-[1.8]">
                         Expanding your home with additional living space for family or guests.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="500">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
                         <img src="img/services/home additions.jpg" alt="Service" class="w-full h-full object-cover">
@@ -231,13 +253,14 @@
                         Seamlessly integrating new rooms into your home to match your vision.
                     </p>
                 </div>
-                
+
                 <div class="text-left" data-aos="fade-up" data-aos-delay="550">
                     <div class="w-full overflow-hidden" style="aspect-ratio: 3/2;">
                         <img src="img/services/outdoor kitchens.jpg" alt="Service" class="w-full h-full object-cover">
                     </div>
                     <h3 class="mt-5 text-[32px] font-semibold"><a
-                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all" href="#">Outdoor Kitchens &
+                            class="hover:decoration-black underline decoration-[#FFFAEA] transition-all"
+                            href="#">Outdoor Kitchens &
                             Living Spaces</a></h3>
                     <p class="mt-2 text-4 leading-[1.8]">
                         Creating stylish and functional outdoor spaces for cooking, dining, and entertaining.
@@ -349,7 +372,8 @@
                     class="font-normal text-[40px] md:text-[60px] leading-none md:leading-[72px] text-black md:text-center mb-2">
                     What Our Clients Say
                 </h2>
-                <p data-aos="fade-up" data-aos-delay="300" class="font-normal text-[22px] md:leading-[30px] md:text-center max-w-[641px] mx-auto md:mb-5 mb-0">
+                <p data-aos="fade-up" data-aos-delay="300"
+                    class="font-normal text-[22px] md:leading-[30px] md:text-center max-w-[641px] mx-auto md:mb-5 mb-0">
                     Real Stories. Real Transformations.
                 </p>
             </div>
@@ -514,9 +538,12 @@
             <div
                 class="flex flex-col sm:flex-row md:flex-row w-full justify-between md:justify-end items-start gap-8 sm:gap-10 lg:gap-[7vw] mt-10 md:mt-0">
                 <div>
+                   
                     <h4 class="text-xs uppercase tracking-wider mb-2 text-black">Address</h4>
-                    <p>2640 Lavery Ct. Unite B</p>
-                    <p>Thousand Oaks CA. 91320</p>
+                    <a href="https://www.google.com/maps/dir//Andijan+region/@40.7685941,72.236379,9z/data=!4m5!4m4!1m0!1m2!1m1!1s0x38bc939c2cc9f571:0xf677ebc7b76654c8">
+                        <p>2640 Lavery Ct. Unite B</p>
+                        <p>Thousand Oaks CA. 91320</p>
+                    </a>
                 </div>
 
                 <div>
