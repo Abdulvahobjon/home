@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Service</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,7 +41,7 @@
                 <a href="./" class="flex">
                     <img src="./img/header/logo.svg" alt="header logo">
                 </a>
-
+                
                 <ul class="lg:flex gap-8 hidden">
                     <li><a class="text-white text-[16px]" href="./index.html">Home</a></li>
                     <li><a class="text-white text-[16px]" href="./service.html">Services</a></li>
@@ -85,13 +85,11 @@
         <section class="lg:pt-[127px] pt-[80px] md:pt-[117px] pb-[80px] lg:pb-[113px] md:pb-[100px]">
             <div class="max-w-[1646px] mx-auto px-5 text-center">
                 <h2
-                    data-aos="fade-up" data-aos-delay="250"
                     class="font-medium text-[30px] md:text-[100px] leading-tight md:leading-[72px] text-[#FFFFFF] mb-5 md:mb-10">
                     Gallery
 
                 </h2>
                 <p
-                data-aos="fade-up" data-aos-delay="300"
                     class="max-w-[600px] mx-auto font-normal text-sm md:text-[30px] leading-normal md:leading-[36px] text-white mb-6 md:mb-10">
                     Delivering real results for top companies. Some of our success stories.
                 </p>
@@ -100,32 +98,9 @@
         </section>
     </div>
 
-    <section class="py-[60px] md:py-[90px] ">
-        <div class="max-w-[1654px] mx-auto px-5 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+   
 
-            <div data-aos="fade-up" data-aos-delay="200" class="border-2 h-[334px] md:h-[434px] lg:h-[534px] overflow-hidden">
-                <img class="hover:scale-125 object-cover w-full h-full transition-all cursor-zoom-in"
-                    src="./img/Gallery/img-1.jpg" alt="">
-            </div>
-            <div data-aos="fade-up" data-aos-delay="300" class="border-2 h-[334px] md:h-[434px] lg:h-[534px] overflow-hidden">
-                <img class="hover:scale-125 object-cover w-full h-full transition-all cursor-zoom-in"
-                    src="./img/Gallery/img-1.jpg" alt="">
-            </div>
-            <div data-aos="fade-up" data-aos-delay="400" class="border-2 h-[334px] md:h-[434px] lg:h-[534px] overflow-hidden">
-                <img class="hover:scale-125 object-cover w-full h-full transition-all cursor-zoom-in"
-                    src="./img/Gallery/img-1.jpg" alt="">
-            </div>
-            <div data-aos="fade-up" data-aos-delay="500" class="border-2 h-[334px] md:h-[434px] lg:h-[534px] overflow-hidden">
-                <img class="hover:scale-125 object-cover w-full h-full transition-all cursor-zoom-in"
-                    src="./img/Gallery/img-1.jpg" alt="">
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <footer class="bg-[#FEC813] pt-[130px] px-6 md:px-6 lg:px-24 text-[#4d3c07]">
+    <footer class="bg-[#FEC813] pt-[130px]  text-[#4d3c07]">
         <div
             class="max-w-[1580px] mx-auto flex flex-col md:flex-row gap-[5vw] font-light pb-[80px] md:pb-[180px] justify-between">
             <div data-aos="fade-up" data-aos-delay="250" class="shrink-0 w-full md:w-auto">
@@ -156,7 +131,8 @@
                 </form>
             </div>
         </div>
-
+        <iframe  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQ55g-IgRRgXrd803PTWDTb7kd6aAitNQ&amp;q=2640 Lavery Ct. Thousand Oaks CA. 91320" allowfullscreen="" loading="lazy" class="lazyload w-full h-[777px]"></iframe>
+        
         <div class="max-w-[1580px] mx-auto flex flex-col md:flex-row justify-between gap-5 py-[70px] font-light">
             <div class="text-sm text-left sm:text-center md:text-left">
                 <p>Focil Construction Inc</p>
@@ -191,81 +167,6 @@
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-
-    <!-- jQUERY -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-    <!-- 
-    // after before js -->
-    <script type="text/javascript" src="./js/before-after.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script type="text/javascript">
-        $('.ba-slider').beforeAfter();
-
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.5, // Har safar nechta kartani ko‘rsatish
-            spaceBetween: 20, // Kartalar orasidagi masofa
-            loop: true, // Cheksiz aylanish
-            speed: 12000, // Harakat tezligi
-            autoplay: {
-                delay: 1, // Kechikishsiz
-                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
-            },
-            freeMode: true, // Erkin harakat
-            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
-            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
-            breakpoints: {
-                320: { // Mobil (320px dan katta)
-                    slidesPerView: 1.2, // 1 ta karta
-                    spaceBetween: 20
-                },
-                1024: { // Katta ekran (1024px dan katta)
-                    slidesPerView: 2, // 3 ta karta
-                    spaceBetween: 20
-                },
-                1440: { // Juda katta ekranlar (1440px dan katta)
-                    slidesPerView: 3.5, // 4 ta karta
-                    spaceBetween: 25
-                }
-            }
-        });
-        var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 1.5, // Har safar nechta kartani ko‘rsatish
-            spaceBetween: 20, // Kartalar orasidagi masofa
-            loop: true, // Cheksiz aylanish
-            speed: 12000, // Harakat tezligi
-            autoplay: {
-                delay: 1, // Kechikishsiz
-                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
-                reverseDirection: true, // O‘ng tarafga aylanish
-            },
-            freeMode: {
-                enabled: true,
-                momentum: false,
-            },
-            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
-            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
-            breakpoints: {
-                320: { // Mobil (320px dan katta)
-                    slidesPerView: 1.2, // 1 ta karta
-                    spaceBetween: 20
-                },
-                1024: { // Katta ekran (1024px dan katta)
-                    slidesPerView: 2, // 3 ta karta
-                    spaceBetween: 20
-                },
-                1240: { // Juda katta ekranlar (1440px dan katta)
-                    slidesPerView: 3.5, // 4 ta karta
-                    spaceBetween: 25
-                }
-            }
-        });
-
-
-    </script>
 
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
