@@ -5,3 +5,9 @@
 html{
     scroll-behavior: smooth;
 }
+.serviceCard:hover .serviceCardImg{
+    transform: scale(1.1);
+}
+.serviceCard:hover h3{
+    text-decoration: underline;
+}
