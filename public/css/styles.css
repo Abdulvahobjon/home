@@ -665,6 +665,12 @@ video {
 .mt-\[50px\] {
   margin-top: 50px;
 }
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
 .block {
   display: block;
 }
@@ -917,9 +923,6 @@ video {
 .overflow-y-auto {
   overflow-y: auto;
 }
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
 .border-2 {
   border-width: 2px;
 }
@@ -971,6 +974,12 @@ video {
 }
 .p-4 {
   padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-\[20px\] {
+  padding: 20px;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1249,8 +1258,8 @@ html {
 
 .headerLink {
     position: relative;
-    overflow: hidden;
     padding-bottom: 2px;
+    overflow: hidden;
 }
 
 .headerLink::before {
@@ -1262,6 +1271,7 @@ html {
     background-color: #fff;
     width: 100%;
     transition: all 0.3s;
+    
 }
 
 .headerLink:hover::before {
@@ -1294,7 +1304,6 @@ html {
 .submenu {
     background-color: #2B2724;
     box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.3);
-    padding: 15px;
     width: 250px;
     position: relative;
     display: flex;
@@ -1327,6 +1336,7 @@ html {
     background: transparent;
     cursor: pointer;
     display: block;
+    transform: scale(0.6);
   }
   
   .burger input {
@@ -1403,6 +1413,10 @@ html {
   
   .hover\:decoration-black:hover {
   text-decoration-color: #000;
+}
+  
+  .hover\:opacity-50:hover {
+  opacity: 0.5;
 }
   
   .hover\:opacity-80:hover {
@@ -1486,6 +1500,22 @@ html {
   .max-md\:leading-5 {
     line-height: 1.25rem;
   }
+
+  .max-md\:leading-4 {
+    line-height: 1rem;
+  }
+
+  .max-md\:leading-6 {
+    line-height: 1.5rem;
+  }
+
+  .max-md\:leading-7 {
+    line-height: 1.75rem;
+  }
+
+  .max-md\:leading-8 {
+    line-height: 2rem;
+  }
 }
   
   @media not all and (min-width: 640px) {
@@ -1568,6 +1598,21 @@ html {
   .max-\[425px\]\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .max-\[425px\]\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .max-\[425px\]\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .max-\[425px\]\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
   
