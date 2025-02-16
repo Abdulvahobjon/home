@@ -1,41 +1,53 @@
-
-
 function headerMenu() {
-  let headerHamburgerBtm = document.querySelector('#headerHamburgerBtm')
-  let rasponsiveMenu = document.querySelector('#rasponsiveMenu')
-  let headerCloseBtn = document.querySelector('#headerCloseBtn')
-  let overlay = document.querySelector('#overlay')
+  let headerHamburgerBtm = document.querySelector('#headerHamburgerBtm');
+  let burgerCheckbox = document.querySelector('#burger');
+  let responsiveMenu = document.querySelector('#responsiveMenu');
+  let overlay = document.querySelector('#overlay');
+  const header = document.getElementById("navbar");
 
-  headerCloseBtn.addEventListener('click', function () {
-    rasponsiveMenu.classList.add('left-[-100%]')
-    rasponsiveMenu.classList.remove('left-0')
+  if (!headerHamburgerBtm || !burgerCheckbox || !responsiveMenu || !overlay) {
+    console.error("Elementlar topilmadi!");
+    return;
+  }
 
-    overlay.classList.add('left-[-100%]')
-    overlay.classList.remove('left-0')
+  // ✅ Menu ochib-yopish funksiyasi
+  function toggleMenu() {
+    let isOpen = burgerCheckbox.checked;
 
-    document.body.classList.remove('overflow-hidden')
-  })
+    responsiveMenu.classList.toggle('right-0', isOpen);
+    responsiveMenu.classList.toggle('right-[-100%]', !isOpen);
 
-  headerHamburgerBtm.addEventListener('click', function () {
-    rasponsiveMenu.classList.remove('left-[-100%]')
-    rasponsiveMenu.classList.add('left-0')
+    overlay.classList.toggle('right-0', isOpen);
+    overlay.classList.toggle('right-[-100%]', !isOpen);
 
-    overlay.classList.remove('left-[-100%]')
-    overlay.classList.add('left-0')
+    document.body.classList.toggle('overflow-hidden', isOpen);
+    header.classList.toggle("bg-black/90", isOpen);
+    header.classList.toggle("shadow-lg", isOpen);
+    header.classList.toggle("backdrop-blur", isOpen);
+  }
 
-    document.body.classList.add('overflow-hidden')
-  })
+  // ✅ `checkbox` holati o‘zgarganda ishlaydi
+  burgerCheckbox.addEventListener('change', toggleMenu);
 
+  // ✅ Overlay bosilganda menyuni yopish
   overlay.addEventListener('click', function () {
-    rasponsiveMenu.classList.add('left-[-100%]')
-    rasponsiveMenu.classList.remove('left-0')
-
-    overlay.classList.add('left-[-100%]')
-    overlay.classList.remove('left-0')
-
-    document.body.classList.remove('overflow-hidden')
+    burgerCheckbox.checked = false;
+    toggleMenu();
+  });
+  responsiveDropdown.forEach((dropdown, index) => {
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("max-h-[500px]")
+      responsiveDropdownArrow[index].classList.toggle("rotate-180")
+    })
   })
 }
+
+// ✅ Barcha elementlar yuklangandan keyin `headerMenu()` ni chaqiramiz
+document.addEventListener("DOMContentLoaded", headerMenu);
+
+
+
+
 
 function playVideo() {
   const video = document.getElementById("video");
@@ -61,15 +73,8 @@ function setNavbarBG() {
 window.addEventListener("scroll", setNavbarBG);
 window.addEventListener("load", setNavbarBG);
 
-document.querySelector('#headerHamburgerBtm') && headerMenu();
 document.querySelector('#playButton') && playVideo();
 
 let responsiveDropdown = document.querySelectorAll(".responsiveDropdown")
 let responsiveDropdownArrow = document.querySelectorAll(".responsiveDropdownArrow")
 
-responsiveDropdown.forEach((dropdown, index) => {
-  dropdown.addEventListener("click", () => {
-    dropdown.classList.toggle("max-h-[500px]")
-    responsiveDropdownArrow[index].classList.toggle("rotate-180")
-  })
-})
