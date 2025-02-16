@@ -63,3 +63,13 @@ window.addEventListener("load", setNavbarBG);
 
 document.querySelector('#headerHamburgerBtm') && headerMenu();
 document.querySelector('#playButton') && playVideo();
+
+let responsiveDropdown = document.querySelectorAll(".responsiveDropdown")
+let responsiveDropdownArrow = document.querySelectorAll(".responsiveDropdownArrow")
+
+responsiveDropdown.forEach((dropdown, index) => {
+  dropdown.addEventListener("click", () => {
+    dropdown.classList.toggle("max-h-[500px]")
+    responsiveDropdownArrow[index].classList.toggle("rotate-180")
+  })
+})
