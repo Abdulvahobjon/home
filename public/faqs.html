@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service</title>
+    <meta name="viewport" content="width=\, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,16 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
-    <!-- swipper link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- after before js  -->
     <link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.min.css" rel="stylesheet">
-
 
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,13 +19,25 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>FAQs</title>
+
+    <style>
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        }
+
+        .faq-answer.show {
+            max-height: 500px;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-
-
     <div class="bg-black"
-        style="background-color: blackad; background-image: url(./img/hero/hero.png); background-size: cover; ">
+        style="background-color: blackad; background-image: url(./img/FAQs/bg.webp); background-size: cover; background-position: center, center;">
         <header id="navbar" class="py-3 md:py-5  fixed top-0 left-0 w-full z-40 transition-all duration-300">
             <div class="max-w-[1840px] mx-auto px-5 flex items-center justify-between">
                 <a href="./" class="flex">
@@ -374,168 +376,103 @@
                 </li>
             </ul>
         </div>
-
         <section
             class="lg:pt-[159px] pt-[200px] max-[450px]:h-screen max-[450px]:flex items-center justify-center md:pt-[159px] pb-[80px] lg:pb-[115px] md:pb-[100px]">
             <div class="max-w-[1646px] mx-auto px-5 text-center">
                 <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
-                    class="font-medium text-[30px] md:text-[100px] leading-tight md:leading-[72px] text-[#FFFFFF] mb-5 md:mb-10">
-                    Gallery
-
+                    class="font-medium text-[30px] md:text-[60px] leading-tight md:leading-[72px] text-[#FFFFFF] mb-2 md:mb-2">
+                    FAQs
                 </h2>
                 <p data-aos="fade-up" data-aos-once="true" data-aos-delay="150"
-                    class="max-w-[600px] mx-auto font-normal text-sm md:text-[30px] leading-normal md:leading-[36px] text-white mb-6 md:mb-10">
-                    Delivering real results for top companies. Some of our success stories.
+                    class="max-w-[834px] mx-auto font-normal text-xl md:text-[30px] leading-normal md:leading-[36px] text-white mb-6 md:mb-10">
+                    Quality and affordability are an integral part of Focil’s design and
+                    construction. Whether we are building a custom residence.
                 </p>
 
             </div>
         </section>
     </div>
 
-    <section id="section" class="bg-[#FFFAEA] md:pt-[61px] pt-[50px] md:pb-[147px] pb-[80px]">
-        <div class="max-w-[1650px] px-4 text-center mx-auto">
+    <section class="py-20">
+        <div class="max-w-[1240px] px-5 mx-auto">
+            <h2 class="text-5xl font-bold text-center text-[#000000] mb-4">Frequently Asked Questions</h2>
+            <p class="text-[#000000] max-w-[800px] mx-auto t-gray-700 text-center mb-6">Before starting a remodel or
+                renovation, any homeowner is bound to
+                have a lot of questions concerning the design and building process...</p>
 
-            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 gap-y-12">
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="./img/services/design services.jpg" alt="Service"
-                            class="serviceCardImg transition-all duration-300 w-full h-full object-cover">
+            <div class="space-y-4">
+                <div class="bg-[#FEC813] text-white rounded-lg">
+                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
+                        <span>Do I need permits?</span>
+                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
+                    </button>
+                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
+                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
+                        give you a realistic budget range for your project. Once we know the exact scope of work and all
+                        the finish selections have been made, we will give you a fixed price for the complete remodel.
+                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
+                        of work and budget.
                     </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-                        Custom
-                        Design Solutions
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Tailored designs crafted to fit your home and lifestyle perfectly.
-                    </p>
-                </a>
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/kitchen remodelling.jpg" alt="Service"
-                            class="serviceCardImg transition-all duration-300 w-full h-full object-cover">
+                </div>
+
+                <div class="bg-[#FEC813] text-white rounded-lg">
+                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
+                        <span>How much will my renovation cost?</span>
+                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
+                    </button>
+                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
+                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
+                        give you a realistic budget range for your project. Once we know the exact scope of work and all
+                        the finish selections have been made, we will give you a fixed price for the complete remodel.
+                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
+                        of work and budget.
                     </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-                        Kitchen Remodeling
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Transforming kitchens into stunning, functional spaces with expert craftsmanship.
-                    </p>
-                </a>
+                </div>
 
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/bathroom remodelilng.jpg" alt="Service"
-                            class="serviceCardImg transition-all duration-300 w-full h-full object-cover">
+                <div class="bg-[#FEC813] text-white rounded-lg">
+                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
+                        <span>How long will my remodel take?</span>
+                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
+                    </button>
+                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
+                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
+                        give you a realistic budget range for your project. Once we know the exact scope of work and all
+                        the finish selections have been made, we will give you a fixed price for the complete remodel.
+                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
+                        of work and budget.
                     </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
+                </div>
 
-                        Bathroom Remodeling
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Bringing luxury and comfort to your bathroom with high-quality materials and design.
-                    </p>
-                </a>
-
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/schedule a consultation.jpg" alt="Service"
-                            class="serviceCardImg  transition-all duration-300 w-full h-full object-cover">
+                <div class="bg-[#FEC813] text-white rounded-lg">
+                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
+                        <span>When can your team start building?</span>
+                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
+                    </button>
+                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
+                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
+                        give you a realistic budget range for your project. Once we know the exact scope of work and all
+                        the finish selections have been made, we will give you a fixed price for the complete remodel.
+                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
+                        of work and budget.
                     </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-
-                        Interior Remodeling
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Enhancing your home’s style and functionality with custom interior renovations.
-                    </p>
-                </a>
-
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/garage conversions.jpg" alt="Service"
-                            class="serviceCardImg transition-all duration-300 w-full h-full object-cover">
-                    </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-
-                        Garage
-                        Conversions
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Maximizing your space by turning your garage into a beautiful, usable living area.
-                    </p>
-                </a>
-
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/garage conversions.jpg" alt="Service"
-                            class="serviceCardImg transition-all duration-300 w-full h-full object-cover">
-                    </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-
-                        Accessory Dwelling Units (ADUs)
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Expanding your home with additional living space for family or guests.
-                    </p>
-                </a>
-
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/home additions.jpg" alt="Service"
-                            class="serviceCardImg w-full transition-all duration-300 h-full object-cover">
-                    </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-
-                        Home
-                        Additions
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Seamlessly integrating new rooms into your home to match your vision.
-                    </p>
-                </a>
-
-                <a href="./service-detail.html" class="text-left serviceCard overflow-hidden cursor-pointer"
-                    data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="w-full overflow-hidden max-h-[265px]">
-                        <img loading="lazy" src="img/services/outdoor kitchens.jpg" alt="Service"
-                            class="serviceCardImg w transition-all duration-300-full h-full object-cover">
-                    </div>
-                    <h3
-                        class="mt-5 hover:decoration-black underline decoration-[#FFFAEA] transition-all text-[32px] font-semibold">
-
-                        Outdoor Kitchens & Living Spaces
-                    </h3>
-                    <p class="mt-2 text-4 leading-[1.8]">
-                        Creating stylish and functional outdoor spaces for cooking, dining, and entertaining.
-                    </p>
-                </a>
+                </div>
             </div>
         </div>
     </section>
+
 
     <footer class="bg-[#FEC813] pt-[130px] px-6 md:px-6 lg:px-24 text-[#4d3c07]">
         <div
             class="max-w-[1580px] mx-auto flex flex-col md:flex-row gap-[5vw] font-light pb-[80px] md:pb-[180px] justify-between">
             <div data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="shrink-0 w-full md:w-auto">
                 <h2 class="text-6xl text-black lg:text-[85px]">
-                    Let's work <br /> together
+                    Let's work <br />
+                    together
                 </h2>
                 <p class="mt-[50px] max-w-[355px] text-lg">
-                    Fill out the form for a free estimate and stop by our showroom!
+                    Call or fill out the form to learn more about ICal Construction’s
+                    expert remodeling services. You’re also welcome to visit our
+                    showroom by appointment and explore our premium materials in person!
                 </p>
             </div>
 
@@ -544,16 +481,16 @@
                 <form class="flex flex-col">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5 w-full">
                         <input required type="tel" placeholder="Phone number"
-                            class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none">
+                            class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none" />
                         <input required type="text" placeholder="Full name"
-                            class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none">
+                            class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none" />
                     </div>
 
                     <textarea required placeholder="Describe Your Project" rows="1"
                         class="w-full placeholder:text-black border-b border-[#d3a200] bg-transparent py-6 focus:outline-none"></textarea>
 
                     <button
-                        class="bg-black text-[#FEC813] px-[96px] font-medium py-5 uppercase tracking-wide hover:opacity-80 self-end mt-14">
+                        class="bg-black text-[#FEC813] px-[96px] max-[500px]:w-full font-medium py-5 uppercase tracking-wide hover:opacity-80 self-end mt-14">
                         Submit
                     </button>
                 </form>
@@ -562,47 +499,74 @@
 
         <div class="max-w-[1580px] mx-auto flex flex-col md:flex-row justify-between gap-5 py-[70px] font-light">
             <div class="text-sm text-left sm:text-center md:text-left">
-                <p>Focil Construction Inc</p>
-                <p>LIC #1022003</p>
-                <p class="mt-6 text-[12px]">&copy; 2025 | Kitchen Showroom & Design Studio</p>
+                <p>ICal Construction</p>
+                <p>LIC #1104272</p>
+                <p class="mt-6 text-[12px]">
+                    &copy; 2025 | Kitchen Showroom & Design Studio
+                </p>
             </div>
 
             <div
                 class="flex flex-col sm:flex-row md:flex-row w-full justify-between md:justify-end items-start gap-8 sm:gap-10 lg:gap-[7vw] mt-10 md:mt-0">
                 <div>
-                    <h4 class="text-xs uppercase tracking-wider mb-2 text-black">Address</h4>
-                    <p>2636 Conejo Center Drive</p>
-                    <p>Thousand Oaks, CA 91320</p>
+                    <h4 class="text-xs uppercase tracking-wider mb-2 text-black">
+                        Address
+                    </h4>
+                    <a
+                        href="https://www.google.com/maps/dir//Andijan+region/@40.7685941,72.236379,9z/data=!4m5!4m4!1m0!1m2!1m1!1s0x38bc939c2cc9f571:0xf677ebc7b76654c8">
+                        <p>2640 Lavery Ct. Unite B</p>
+                        <p>Thousand Oaks CA. 91320</p>
+                    </a>
                 </div>
 
                 <div>
-                    <h4 class="text-xs uppercase tracking-wider mb-2 text-black">Call Us On</h4>
+                    <h4 class="text-xs uppercase tracking-wider mb-2 text-black">
+                        Call Us On
+                    </h4>
                     <a href="tel:+1-805-3239515">(805) 323-9515</a>
                 </div>
 
                 <div>
-                    <h4 class="text-xs uppercase tracking-wider mb-2 text-black">Follow Us On</h4>
-                    <div class="flex items-center space-x-4 text-lg">
-                        <a href="#" target="_blank" class="hover:text-gray-700"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank" class="hover:text-gray-700"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" class="hover:text-gray-700"><i class="fab fa-youtube"></i></a>
-                        <a href="#" target="_blank" class="hover:text-gray-700"><i class="fab fa-yelp"></i></a>
+                    <h4 class="text-xs uppercase tracking-wider mb-2 text-black">
+                        Follow Us On
+                    </h4>
+
+                    <div class="flex space-x-4 text-lg">
+                        <a href="https://www.facebook.com/LuxiomerStoneGallery/" target="_blank"
+                            class="hover:text-gray-700"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/luxiomerstonegallery/" target="_blank"
+                            class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/LuxiomerStoneGallery/" target="_blank"
+                            class="hover:text-gray-700"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.linkedin.com/company/89757824/admin/" target="_blank"
+                            class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@LuxiomerStoneGallery" target="_blank"
+                            class="hover:text-gray-700"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+        document.addEventListener("DOMContentLoaded", (event) => {
             AOS.init();
         });
-    </script>
 
+        let dropdown = document.querySelectorAll(".dropdown")
+
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const dropdownIcon = button.querySelector('.dropdown');
+
+                answer.classList.toggle('show');
+                dropdownIcon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
 </body>
 
 </html>
