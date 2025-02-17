@@ -47,6 +47,7 @@ function headerMenu() {
 // ✅ Navbar fonini o‘zgartirish funksiyasi
 function setNavbarBG() {
   const header = document.getElementById("navbar");
+  const consultationBtn = document.getElementById("consultationBtn");
   if (!header) return;
 
   if (window.scrollY > 50) {
@@ -102,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Elementlarni olish
   const consultationBtn = document.getElementById("consultationBtn");
   const leadFormContainer = document.getElementById("leadFormContainer");
-  const overlay = document.getElementById("overlay");
+  const overlay = document.getElementById("overlayForm");
   const closeForm = document.getElementById("closeForm");
   const leadForm = document.getElementById("leadForm");
   const dateField = document.getElementById("preferred_date");
