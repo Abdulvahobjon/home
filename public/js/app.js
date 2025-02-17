@@ -133,33 +133,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Formani yuborish
   if (leadForm && dateField) {
-    leadForm.addEventListener("submit", function (e) {
-      e.preventDefault(); // Sahifani yangilanishini oldini olish
-
+    leadForm.addEventListener("submit", function () {
       // Sana formatini to‘g‘rilash
       if (dateField.value) {
         dateField.value = new Date(dateField.value).toISOString().split("T")[0]; // YYYY-MM-DD format
       }
-
-      // Form ma’lumotlarini olish
-      const formData = new FormData(leadForm);
-
-      // Salesforce’ga so‘rov yuborish
-      fetch(leadForm.action, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors", // Salesforce'ga yuborishda CORS muammolarini oldini olish
-      })
-        .then(() => {
-          alert("Your request has been submitted successfully!");
-          closeFormHandler(); // Formani yopish
-          leadForm.reset(); // Formani tozalash
-        })
-        .catch((error) => {
-          console.error("Error submitting the form:", error);
-        });
     });
   }
 });
+
 
 
