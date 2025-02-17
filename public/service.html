@@ -594,6 +594,72 @@
         </div>
     </footer>
 
+        <!-- Form overlay -->
+    
+    <!-- Lead Form -->
+    <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-30"></div>
+    <div id="leadFormContainer"
+    class="fixed inset-0 flex items-center justify-center scale-0 opacity-0 transition-transform duration-300 z-40">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DJ6000000Jj3m" method="POST"
+            id="leadForm" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg relative z-40">
+
+            <button type="button" id="closeForm" class="absolute top-3 right-4 text-gray-500 text-2xl">&times;</button>
+
+            <!-- Salesforce Organization ID -->
+            <input type="hidden" name="oid" value="00DJ6000000Jj3m">
+            <input type="hidden" name="retURL" value="http://">
+
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Contact Form</h2>
+
+            <!-- First Name -->
+            <div class="mb-4">
+                <label for="first_name" class="block text-gray-700 font-medium">First Name</label>
+                <input id="first_name" name="first_name" maxlength="40" required
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-4">
+                <label for="last_name" class="block text-gray-700 font-medium">Last Name</label>
+                <input id="last_name" name="last_name" maxlength="80" required
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium">Email</label>
+                <input id="email" name="email" type="email" maxlength="80" required
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 font-medium">Phone</label>
+                <input id="phone" name="phone" type="tel" maxlength="40" required
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="mb-4">
+                <label for="preferred_date" class="block text-gray-700 font-medium">Preferred Date</label>
+                <input id="preferred_date" name="00NJ6000009hKkZ" type="date" required
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <!-- Consultation Button -->
+    <button id="consultationBtn"
+        class="w-[180px] md:w-[251px] py-3 md:py-5 font-medium text-base leading-6 text-black bg-[#FEC813] text-center fixed capitalize bottom-10 right-10 z-20">
+        Schedule A Consultation
+    </button>
+
 
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
