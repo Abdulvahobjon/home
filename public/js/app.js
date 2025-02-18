@@ -99,48 +99,44 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("scroll", setNavbarBG);
 window.addEventListener("load", setNavbarBG);
 
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Elementlarni olish
   const consultationBtn = document.getElementById("consultationBtn");
   const leadFormContainer = document.getElementById("leadFormContainer");
   const overlay = document.getElementById("overlayForm");
   const closeForm = document.getElementById("closeForm");
-  const leadForm = document.getElementById("leadForm");
-  const dateField = document.getElementById("preferred_date");
 
-  // Formani ochish
+  // Modalni ochish
   const openForm = () => {
     leadFormContainer.classList.remove("scale-0", "opacity-0");
     overlay.classList.remove("hidden");
   };
 
-  // Formani yopish
+  // Modalni yopish
   const closeFormHandler = () => {
     leadFormContainer.classList.add("scale-0", "opacity-0");
     overlay.classList.add("hidden");
   };
 
-  consultationBtn.addEventListener("click", openForm);
-  closeForm.addEventListener("click", closeFormHandler);
-  overlay.addEventListener("click", closeFormHandler);
+  // Tugmalar bosilganda modalni ochish / yopish
+  if (consultationBtn) {
+    consultationBtn.addEventListener("click", openForm);
+  }
+  if (closeForm) {
+    closeForm.addEventListener("click", closeFormHandler);
+  }
+  if (overlay) {
+    overlay.addEventListener("click", closeFormHandler);
+  }
 
-  // Modal ichidagi formani bosganda modal yopilmasligi uchun
+  // Modalni tashqarisiga bosganda ham yopish
   leadFormContainer.addEventListener("click", (e) => {
-    if (e.target === leadFormContainer) {
+    if (!e.target.closest(".relative")) {
       closeFormHandler();
     }
   });
-
-  // Formani yuborish
-  if (leadForm && dateField) {
-    leadForm.addEventListener("submit", function () {
-      // Sana formatini to‘g‘rilash
-      if (dateField.value) {
-        dateField.value = new Date(dateField.value).toISOString().split("T")[0]; // YYYY-MM-DD format
-      }
-    });
-  }
 });
+
 
 
 

@@ -494,66 +494,63 @@
         <!-- Form overlay -->
     
     <!-- Lead Form -->
-    <div id="overlayForm" class="hidden fixed inset-0 bg-black/50 z-30"></div>
+    <div id="overlayForm" class="hidden fixed inset-0 bg-black/50 z-40"></div>
     <div id="leadFormContainer"
-        class="fixed inset-0 flex items-center justify-center scale-0 opacity-0  transition-transform duration-300 z-40">
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DJ6000000Jj3m"
-            method="POST" id="leadForm" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg relative z-40">
-
-            <button type="button" id="closeForm" class="absolute top-3 right-4 text-gray-500 text-2xl">&times;</button>
-
-            <!-- Salesforce Organization ID -->
-            <input type=hidden name="oid" value="00DJ6000000Jj3m">
-            <input type=hidden name="retURL" value="http://">
-
-            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Contact Form</h2>
-
-            <!-- First Name -->
-            <div class="mb-4">
-                <label for="first_name" class="block text-gray-700 font-medium">First Name</label>
-                <input id="first_name" name="first_name" maxlength="40" required
-                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        class="fixed inset-0 flex items-center justify-center scale-0 opacity-0 transition-transform duration-300 z-50">
+        <div class="relative max-w-2xl w-full bg-white p-6 md:p-10 rounded-xl shadow-lg overflow-y-auto max-h-[90vh]">
+            <!-- Close Button -->
+            <button id="closeForm"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+    
+            <!-- Title -->
+            <h2 class="text-2xl font-semibold text-center">Hassle-Free Estimate</h2>
+            <p class="text-gray-600 text-center mt-2">
+                Interested in our products or services? Don't sweat it! <br>
+                We offer an effortless way to get an estimate tailored to your needs.
+            </p>
+    
+            <!-- Form -->
+            <form class="mt-6 space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Name" class="p-3 border rounded-lg w-full">
+                    <input type="text" placeholder="Phone" class="p-3 border rounded-lg w-full">
+                    <input type="email" placeholder="Email" class="p-3 border rounded-lg w-full">
+                    <input type="date" placeholder="Date" class="p-3 border rounded-lg w-full">
+                </div>
+                <textarea placeholder="Message to us" class="p-3 border rounded-lg w-full h-24"></textarea>
+                <button
+                    class="w-full bg-yellow-500 text-white font-semibold py-3 rounded-lg hover:bg-yellow-600 transition">
+                    Get a Quote Within 1 Hour.
+                </button>
+            </form>
+    
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div class="p-6 border rounded-lg text-center">
+                    <span class="text-red-500 text-xl">📍</span>
+                    <h3 class="text-lg font-semibold mt-2">Visit Our Showroom</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Click below to find our showroom location on the map and experience our offerings in person.
+                    </p>
+                    <button
+                        class="mt-4 bg-yellow-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-600 transition">
+                        VISIT SHOWROOM
+                    </button>
+                </div>
+                <div class="p-6 border rounded-lg text-center">
+                    <span class="text-gray-700 text-xl">📞</span>
+                    <h3 class="text-lg font-semibold mt-2">Direct Line to Us</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Prefer to chat? Click the button below to call us directly for any inquiries or to get your
+                        estimate.
+                    </p>
+                    <button
+                        class="mt-4 bg-yellow-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-600 transition">
+                        GIVE US A CALL
+                    </button>
+                </div>
             </div>
-
-            <!-- Last Name -->
-            <div class="mb-4">
-                <label for="last_name" class="block text-gray-700 font-medium">Last Name</label>
-                <input id="last_name" name="last_name" maxlength="80" required
-                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-
-            <div class="mb-4">
-                <label for="company" class="block text-gray-700 font-medium">Company</label>
-                <input id="company" maxlength="40" name="company" size="20" type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            </div>
-
-            <!-- Email -->
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-medium">Email</label>
-                <input id="email" name="email" type="email" maxlength="80" required
-                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-
-            <!-- Phone -->
-            <div class="mb-4">
-                <label for="phone" class="block text-gray-700 font-medium">Phone</label>
-                <input id="phone" name="phone" type="tel" maxlength="40" required
-                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-
-            <!-- Preferred Date -->
-            <div class="mb-4">
-                <label for="preferred_date" class="block text-gray-700 font-medium">Preferred Date</label>
-                <input id="preferred_date" name="00NJ6000009hKkZ" type="date" required
-                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit"
-                class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">
-                Submit
-            </button>
-        </form>
+        </div>
     </div>
 
     <!-- Consultation Button -->
