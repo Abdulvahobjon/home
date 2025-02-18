@@ -25,12 +25,13 @@
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            transition: max-height 0.5s ;
+            padding-left: 10px;
+            padding-top: 15px;
         }
 
         .faq-answer.show {
             max-height: 500px;
-            padding: 10px;
         }
     </style>
 </head>
@@ -95,10 +96,11 @@
                             <ul class="submenu p-[20px]">
                                 <li class="overflow-hidden">
                                     <a href="./about.html"
-                                        class="font-normal text-base text-white headerLink  line-clamp-1 overflow-hidden">About us</a>
+                                        class="font-normal text-base text-white headerLink  line-clamp-1 overflow-hidden">About
+                                        us</a>
                                 </li>
                                 <li class="overflow-hidden">
-                                    <a href="#"
+                                    <a download href="./doc/doc.pdf"
                                         class="font-normal text-base text-white headerLink  line-clamp-1 overflow-hidden">Download
                                         Your Remodelling Guide</a>
                                 </li>
@@ -116,8 +118,8 @@
                     </li>
 
                     <li class="relative headerNavItem">
-                        <div class="text-white cursor-pointer text-[16px] headerLink overflow-hidden flex items-center gap-1"
-                            >
+                        <div
+                            class="text-white cursor-pointer text-[16px] headerLink overflow-hidden flex items-center gap-1">
                             Services
                             <svg class="arrow transition-all duration-300" width="8" height="6" viewBox="0 0 8 6"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,31 +168,32 @@
                                         class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Services</a>
                                 </li>
                                 <li class="">
-                                    <a href="./service-detail.html"
+                                    <a href="./customDesignSolutions.html"
                                         class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Custom
                                         Design Solutions</a>
                                 </li>
 
                                 <li class="overflow-hidden">
-                                    <a href="./service-detail.html"
+                                    <a href="./kitchenRemodelling.html"
                                         class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Kitchen
                                         Remodeling</a>
                                 </li>
 
                                 <li class="overflow-hidden">
-                                    <a href="./service-detail.html"
+                                    <a href="./bathroomRemodeling.html"
                                         class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Bathroom
                                         Remodeling</a>
                                 </li>
 
                                 <li class="overflow-hidden">
                                     <a href="./service-detail.html"
-                                        class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Schedule a
+                                        class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Schedule
+                                        a
                                         Consultation</a>
                                 </li>
 
                                 <li class="overflow-hidden">
-                                    <a href="./service-detail.html"
+                                    <a href="./garageConversions.html"
                                         class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Garage
                                         Conversions</a>
                                 </li>
@@ -202,12 +205,13 @@
                                 </li>
 
                                 <li class="overflow-hidden">
-                                    <a href="./service-detail.html" class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Home
+                                    <a href="./homeAdditions.html"
+                                        class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Home
                                         Additions</a>
                                 </li>
 
                                 <li class="overflow-hidden">
-                                    <a href="./service-detail.html"
+                                    <a href="./outdoorKitchensLivingSpaces.html"
                                         class="font-normal text-base text-white headerLink line-clamp-1 overflow-hidden">Outdoor
                                         Kitchens & Living Spaces</a>
                                 </li>
@@ -233,7 +237,7 @@
                         <a class="text-white text-[16px] headerLink overflow-hidden flex items-center gap-1"
                             href="./testimonials.html">Reviews</a>
                     </li>
-               
+
                     <li class="relative headerNavItem">
                         <a class="text-white text-[16px] headerLink overflow-hidden flex items-center gap-1"
                             href="./contact.html">Contact
@@ -263,7 +267,7 @@
         <div id="overlay" class="w-full xl:hidden h-full  fixed top-0 right-[-100%] z-10"></div>
         <div id="responsiveMenu"
             class="fixed xl:hidden z-30 max-md:top-[57px] max-md:w-[50%] max-[450px]:w-full flex top-[97px] shadow-lg backdrop-blur right-[-100%] w-[40%] h-full bg-black/90 items-start justify-center transition-all overflow-y-auto">
-          
+
             <ul class="flex p-4 w-full flex-col pt-[30px] justify-center items-center">
                 <li class="relative overflow-hidden w-full">
                     <a class="text-white text-[16px] headerLink overflow-hidden flex items-center gap-1  border-[#ffffff1a]  py-3"
@@ -278,14 +282,16 @@
                     </div>
                     <ul class="pl-5 flex flex-col gap-3 mt-3">
                         <li class="overflow-hidden">
-                            <a href="./about.html" class="font-normal text-base text-white headerLink overflow-hidden">About us</a>
+                            <a href="./about.html"
+                                class="font-normal text-base text-white headerLink overflow-hidden">About us</a>
                         </li>
                         <li class="overflow-hidden">
-                            <a href="#" class="font-normal text-base text-white headerLink overflow-hidden">Download
+                            <a download href="./doc/doc.pdf" class="font-normal text-base text-white headerLink overflow-hidden">Download
                                 Your Remodelling Guide</a>
                         </li>
                         <li class="overflow-hidden">
-                            <a href="./faqs.html" class="font-normal text-base text-white headerLink overflow-hidden">FAQs</a>
+                            <a href="./faqs.html"
+                                class="font-normal text-base text-white headerLink overflow-hidden">FAQs</a>
                         </li>
                         <li class="overflow-hidden">
                             <a href="#" class="font-normal text-base text-white headerLink overflow-hidden">Blog</a>
@@ -305,31 +311,30 @@
                                 class="font-normal text-base text-white headerLink overflow-hidden">Services</a>
                         </li>
                         <li class="overflow-hidden">
-                            <a href="./service-detail.html"
+                            <a href="./customDesignSolutions.html"
                                 class="font-normal text-base text-white headerLink overflow-hidden">Custom
                                 Design Solutions</a>
                         </li>
 
                         <li class="overflow-hidden">
-                            <a href="./service-detail.html"
+                            <a href="./kitchenRemodelling.html"
                                 class="font-normal text-base text-white headerLink overflow-hidden">Kitchen
                                 Remodeling</a>
                         </li>
 
                         <li class="overflow-hidden">
-                            <a href="./service-detail.html"
+                            <a href="./bathroomRemodeling.html"
                                 class="font-normal text-base text-white headerLink overflow-hidden">Bathroom
                                 Remodeling</a>
                         </li>
 
                         <li class="overflow-hidden">
-                            <a href="./service-detail.html"
-                                class="font-normal text-base text-white headerLink overflow-hidden">Schedule a
-                                Consultation</a>
+                            <a href="./homeAdditions.html"
+                                class="font-normal text-base text-white headerLink overflow-hidden">Home Additions</a>
                         </li>
 
                         <li class="overflow-hidden">
-                            <a href="./service-detail.html"
+                            <a href="./garageConversions.html"
                                 class="font-normal text-base text-white headerLink overflow-hidden">Garage
                                 Conversions</a>
                         </li>
@@ -347,7 +352,7 @@
                         </li>
 
                         <li class="overflow-hidden">
-                            <a href="./service-detail.html"
+                            <a href="./outdoorKitchensLivingSpaces.html"
                                 class="font-normal text-base text-white headerLink overflow-hidden">Outdoor
                                 Kitchens & Living Spaces</a>
                         </li>
@@ -407,55 +412,11 @@
                         <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
                     </button>
                     <div class="faq-answer bg-[#FFFFFF] text-gray-800">
-                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
-                        give you a realistic budget range for your project. Once we know the exact scope of work and all
-                        the finish selections have been made, we will give you a fixed price for the complete remodel.
-                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
-                        of work and budget.
+                        Planning a renovation or remodel often comes with many questions about the design and construction process. At ICal Construction, we aim to provide clarity and peace of mind to our clients. Here are answers to some of the most frequently asked questions to help you better understand our process before your initial consultation and meeting.
                     </div>
                 </div>
 
-                <div class="bg-[#FEC813] text-white rounded-lg">
-                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
-                        <span>How much will my renovation cost?</span>
-                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
-                    </button>
-                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
-                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
-                        give you a realistic budget range for your project. Once we know the exact scope of work and all
-                        the finish selections have been made, we will give you a fixed price for the complete remodel.
-                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
-                        of work and budget.
-                    </div>
-                </div>
-
-                <div class="bg-[#FEC813] text-white rounded-lg">
-                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
-                        <span>How long will my remodel take?</span>
-                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
-                    </button>
-                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
-                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
-                        give you a realistic budget range for your project. Once we know the exact scope of work and all
-                        the finish selections have been made, we will give you a fixed price for the complete remodel.
-                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
-                        of work and budget.
-                    </div>
-                </div>
-
-                <div class="bg-[#FEC813] text-white rounded-lg">
-                    <button class="w-full text-left px-6 py-4 flex justify-between items-center faq-btn">
-                        <span>When can your team start building?</span>
-                        <img src="./img/header/dropdown.svg" alt="dropdown" class="dropdown transition-all duration-300">
-                    </button>
-                    <div class="faq-answer bg-[#FFFFFF] text-gray-800">
-                        When we meet with you to understand the spaces you plan to remodel and the scope of work, we can
-                        give you a realistic budget range for your project. Once we know the exact scope of work and all
-                        the finish selections have been made, we will give you a fixed price for the complete remodel.
-                        We also guarantee that our team will stick to that price and work within the agreed-upon scope
-                        of work and budget.
-                    </div>
-                </div>
+             
             </div>
         </div>
     </section>
