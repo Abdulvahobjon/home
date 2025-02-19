@@ -51,9 +51,9 @@ function setNavbarBG() {
   if (!header) return;
 
   if (window.scrollY > 50) {
-    header.classList.add("bg-black/90", "shadow-lg", "backdrop-blur");
+    header.classList.add("bg-black/70", "shadow-lg", "backdrop-blur-sm");
   } else {
-    header.classList.remove("bg-black/90", "shadow-lg", "backdrop-blur",);
+    header.classList.remove("bg-black/70", "shadow-lg", "backdrop-blur-sm",);
   }
 }
 
