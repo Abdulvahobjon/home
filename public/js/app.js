@@ -101,7 +101,7 @@ window.addEventListener("load", setNavbarBG);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const consultationBtn = document.getElementById("consultationBtn");
+  const consultationBtns = document.querySelectorAll("#consultationBtn");
   const leadFormContainer = document.getElementById("leadFormContainer");
   const overlay = document.getElementById("overlayForm");
   const closeForm = document.getElementById("closeForm");
@@ -119,8 +119,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Tugmalar bosilganda modalni ochish / yopish
-  if (consultationBtn) {
-    consultationBtn.addEventListener("click", openForm);
+  if (consultationBtns) {
+    consultationBtns.forEach(consultationBtn => {
+      consultationBtn.addEventListener("click", openForm);
+    })
   }
   if (closeForm) {
     closeForm.addEventListener("click", closeFormHandler);
