@@ -25,13 +25,17 @@
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s;
+            transition: max-height 0.8s, padding-block 1s, color 1s;
             padding-left: 10px;
-            padding-top: 15px;
+            padding-block: 0;
+            color: white !important;
         }
 
         .faq-answer.show {
             max-height: 500px;
+            padding-block: 15px;
+            color: black !important;
+            transition: max-height 0.8s, padding-block 0.5s, color 0.8s;
         }
     </style>
 </head>
