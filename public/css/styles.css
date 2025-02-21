@@ -1759,6 +1759,9 @@ html {
   overflow-x: hidden;
 }
 
+img {
+  object-fit: cover;
+}
 
 
 .serviceCard:hover .serviceCardImg {
