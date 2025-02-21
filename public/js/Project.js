@@ -19,8 +19,7 @@ let swiper_pagination_bullet = document.querySelectorAll(
 
 const Swiper_pagination_bulletFun = () => {
   swiper_pagination_bullet[0].textContent = "Images";
-  swiper_pagination_bullet[1].textContent = "News";
-  swiper_pagination_bullet[2].textContent = "Gallery";
-  swiper_pagination_bullet[3].textContent = "Videos";
+  swiper_pagination_bullet[1].textContent = "Videos";
+  swiper_pagination_bullet[2].textContent = "Construction process";
 };
 Swiper_pagination_bulletFun();
