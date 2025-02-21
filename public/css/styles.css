@@ -1817,7 +1817,7 @@ html {
 .submenu {
   background-color: #2B2724;
   box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.3);
-  width: 250px;
+
   position: relative;
   display: flex;
   flex-direction: column;
