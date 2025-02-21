@@ -11,6 +11,10 @@ img {
   object-fit: cover;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .serviceCard:hover .serviceCardImg {
   transform: scale(1.1);
 }
