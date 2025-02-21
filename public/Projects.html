@@ -60,6 +60,24 @@
             border-bottom-color: #FEC813 !important;
             background-color: #FFFFFF !important;
         }
+
+        .fallback__background {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(100deg, #f1f1f1 30%, #e3e3e3 50%, #f1f1f1 70%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite linear;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -100% 0;
+            }
+
+            100% {
+                background-position: 100% 0;
+            }
+        }
     </style>
 </head>
 
@@ -433,9 +451,235 @@
                     <div class="swiper-slide">
                         <div id="Images"
                             class="grid grid-cols-4 gap-5 max-xl:grid-cols-3 max-[920px]:grid-cols-2 max-[425px]:grid-cols-1 max-[425px]:gap-4">
-                            <div class="h-[280px] border overflow-hidden">
-                                <a href="./img/Project/kitchen.png" class="glightbox" data-filter-type="image">
-                                    <img loading="lazy" src="./img/Project/kitchen.png" alt="kitchen"
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img1.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img1.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img2.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img2.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img3.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img3.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img4.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img4.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img5.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img5.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img6.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img6.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img7.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img7.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img8.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img8.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img9.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img9.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img10.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img10.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+
+                            <!--  -->
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img11.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img11.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img12.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img12.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img13.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img13.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img14.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img14.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img15.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img15.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img16.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img16.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img17.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img17.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img18.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img18.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img19.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img19.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img20.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img20.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <!--  -->
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img21.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img21.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img22.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img22.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img23.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img23.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img24.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img24.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img25.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img25.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img26.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img26.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img27.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img27.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img28.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img28.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img29.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img29.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img30.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img30.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <!--  -->
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img31.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img31.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img32.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img32.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img33.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img33.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img34.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img34.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img35.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img35.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img36.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img36.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img37.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img37.webp" alt="kitchen"
+                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
+                                </a>
+                            </div>
+                            <div class="h-[280px] border overflow-hidden fallback__background">
+                                <a href="./img/Project/images/img38.jpg" class="glightbox" data-filter-type="image">
+                                    <img loading="lazy" decoding="async" src="./img/Project/images/min/img38.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
@@ -447,63 +691,63 @@
                             <div class="grid grid-cols-2 gap-5 max-md:gap-3 max-lg:grid-cols-1">
                                 <div class="grid grid-cols-1 gap-5 max-md:gap-3">
                                     <div>
-                                        <div class="max-h-[542px] border overflow-hidden">
-                                            <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                        <div class="max-h-[542px] border overflow-hidden fallback__background">
+                                            <a href="./img/Project/videos/Showroom 1.mp4" data-filter-type="video"
                                                 data-type="video" class="glightbox">
                                                 <video
                                                     class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                    autoplay loop muted playsinline src="./video/projects/project-1.mp4"
-                                                    preload="none"></video>
+                                                    muted
+                                                    src="./img/Project/videos/Showroom 1.mp4" preload="none"></video>
                                             </a>
                                         </div>
                                         <div class="grid grid-cols-2 max-md:mt-3 mt-5 gap-5 max-md:gap-1">
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 2.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 2.mp4" preload="none"></video>
                                                 </a>
                                             </div>
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 3.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 3.mp4" preload="none"></video>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="max-h-[261px] border overflow-hidden">
-                                            <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                        <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                            <a href="./img/Project/videos/Showroom 4.mp4" data-filter-type="video"
                                                 data-type="video" class="glightbox">
                                                 <video
                                                     class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                    autoplay loop muted playsinline src="./video/projects/project-1.mp4"
-                                                    preload="none"></video>
+                                                    muted
+                                                    src="./img/Project/videos/Showroom 4.mp4" preload="none"></video>
                                             </a>
                                         </div>
                                         <div class="grid grid-cols-2 max-md:mt-3 mt-5 gap-5 max-md:gap-1">
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 5.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 5.mp4" preload="none"></video>
                                                 </a>
                                             </div>
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 6.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 6.mp4" preload="none"></video>
                                                 </a>
                                             </div>
                                         </div>
@@ -511,64 +755,64 @@
                                 </div>
                                 <div class="grid grid-cols-1 gap-5 max-md:gap-3">
                                     <div>
-                                        <div class="max-h-[261px] border overflow-hidden">
-                                            <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                        <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                            <a href="./img/Project/videos/Showroom 7.mp4" data-filter-type="video"
                                                 data-type="video" class="glightbox">
                                                 <video
                                                     class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                    autoplay loop muted playsinline src="./video/projects/project-1.mp4"
-                                                    preload="none"></video>
+                                                    muted
+                                                    src="./img/Project/videos/Showroom 7.mp4" preload="none"></video>
                                             </a>
                                         </div>
                                         <div class="grid grid-cols-2 max-md:mt-3 mt-5 gap-5 max-md:gap-1">
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 8.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 8.mp4" preload="none"></video>
                                                 </a>
                                             </div>
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 9.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 9.mp4" preload="none"></video>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="grid grid-cols-2  gap-5 max-md:gap-1">
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 10.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 10.mp4" preload="none"></video>
                                                 </a>
                                             </div>
-                                            <div class="max-h-[261px] border overflow-hidden">
-                                                <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                            <div class="max-h-[261px] border overflow-hidden fallback__background">
+                                                <a href="./img/Project/videos/Showroom 11.mp4" data-filter-type="video"
                                                     data-type="video" class="glightbox">
                                                     <video
                                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                        autoplay loop muted playsinline
-                                                        src="./video/projects/project-1.mp4" preload="none"></video>
+                                                        muted
+                                                        src="./img/Project/videos/Showroom 11.mp4" preload="none"></video>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="max-h-[542px] border overflow-hidden max-md:mt-3 mt-5">
-                                            <a href="./video/projects/project-1.mp4" data-filter-type="video"
+                                        <div class="max-h-[542px] border overflow-hidden fallback__background max-md:mt-3 mt-5">
+                                            <a href="./img/Project/videos/Showroom 12.mp4" data-filter-type="video"
                                                 data-type="video" class="glightbox">
                                                 <video
                                                     class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in"
-                                                    autoplay loop muted playsinline src="./video/projects/project-1.mp4"
-                                                    preload="none"></video>
+                                                    muted
+                                                    src="./img/Project/videos/Showroom 12.mp4" preload="none"></video>
                                             </a>
                                         </div>
                                     </div>
@@ -579,255 +823,136 @@
                     <div class="swiper-slide">
                         <div id="Images"
                             class="grid grid-cols-4 gap-5 max-xl:grid-cols-3 max-[920px]:grid-cols-2 max-[425px]:grid-cols-1 max-[425px]:gap-4">
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img1.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img1.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img2.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img2.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img3.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img3.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img4.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img4.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img5.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img5.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img6.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img6.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img7.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img7.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img8.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img8.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img9.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img9.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img10.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img10.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img11.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img11.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img12.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img12.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img13.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img13.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img14.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img14.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img15.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img15.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img16.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img16.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img17.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img17.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img18.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img18.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
+                            <div class="border overflow-hidden fallback__background">
+                                <a href="./img/Project/construction_process/img19.jpg" data-filter-type="construction_process"
                                     class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
-                                        class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
-                                </a>
-                            </div>
-                            <div class="border overflow-hidden">
-                                <a href="./img/Project/kitchekRight.png" data-filter-type="construction_process"
-                                    class="glightbox">
-                                    <img loading="lazy" src="./img/Project/kitchekRight.png" alt="kitchen"
+                                    <img loading="lazy" decoding="async" src="./img/Project/construction_process/min/img19.webp" alt="kitchen"
                                         class="w-full h-full hover:scale-125 object-cover transition-all cursor-zoom-in">
                                 </a>
                             </div>
