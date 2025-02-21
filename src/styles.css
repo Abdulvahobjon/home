@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+body:has(#overlayForm) {
+  overflow: hidden;
+}
+
 .serviceCard:hover .serviceCardImg {
   transform: scale(1.1);
 }
@@ -160,4 +164,3 @@ body {
 .headerNavItem {
   cursor: pointer;
 }
-

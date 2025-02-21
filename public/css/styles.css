@@ -1763,6 +1763,11 @@ body {
   overflow-x: hidden;
 }
 
+html:has(#overlayForm:not(.hidden)),
+body:has(#overlayForm:not(.hidden)) {
+  overflow: hidden;
+}
+
 img {
   object-fit: cover;
 }
