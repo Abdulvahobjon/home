@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   AOS.init();
+
+  GLightbox({
+    touchNavigation: true,
+    loop: true,
+    selector: '[data-filter-type=image]'
+  });
+
+  GLightbox({
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
+    selector: '[data-filter-type=video]'
+  });
+
+  GLightbox({
+    touchNavigation: true,
+    loop: true,
+    selector: '[data-filter-type=construction_process]'
+  });
 });
 var swiper = new Swiper(".mySwiper", {
   autoHeight: true,
