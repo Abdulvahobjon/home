@@ -1768,6 +1768,12 @@ body:has(#overlayForm:not(.hidden)) {
   overflow: hidden;
 }
 
+@media screen and (max-width: 450px) {
+  html:has(#responsiveMenu.right-0) {
+    overflow: hidden;
+  }
+}
+
 img {
   object-fit: cover;
 }

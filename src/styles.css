@@ -15,8 +15,15 @@ body {
   overflow-x: hidden;
 }
 
-body:has(#overlayForm) {
+html:has(#overlayForm:not(.hidden)),
+body:has(#overlayForm:not(.hidden)) {
   overflow: hidden;
+}
+
+@media screen and (max-width: 450px) {
+  html:has(#responsiveMenu.right-0) {
+    overflow: hidden;
+  }
 }
 
 .serviceCard:hover .serviceCardImg {
