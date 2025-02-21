@@ -99,6 +99,15 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("scroll", setNavbarBG);
 window.addEventListener("load", setNavbarBG);
 
+const fileInput = document.querySelector(".custom-file-input");
+
+fileInput?.addEventListener("change", function () {
+  if (this.files.length > 0) {
+    this.classList.add("has-file");
+  } else {
+    this.classList.remove("has-file");
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const consultationBtns = document.querySelectorAll("#consultationBtn");
@@ -138,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 
 
 

@@ -453,7 +453,7 @@
                         Take the first step toward your dream space by scheduling a consultation with ICal Construction
                         today.
                     </p>
-                    <button
+                    <button id="consultationBtn"
                         class="mt-6 bg-[#000000] text-white text-xl font-medium py-3 px-6 rounded-md hover:bg-[#333333] transition-all">
                         Schedule a Consultation
                     </button>
@@ -540,9 +540,10 @@
                 class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
 
             <!-- Title -->
-            <h2 class="text-2xl font-semibold text-center">Get a Fast & Easy Estimate</h2>
-            <p class="text-gray-600 text-center mt-2 max-w-[400px] mx-auto">
-                Tell us what you need, and we’ll provide a personalized quote—hassle-free!
+            <h2 class="text-2xl font-semibold text-center">If you're planning a home renovation</h2>
+            <p class="text-gray-600 text-center mt-2 max-w-[500px] mx-auto">
+                ICal Construction is here to help you take the first step in the right direction.
+                Let us turn your vision into reality with expert guidance and personalized solutions.
             </p>
 
             <!-- Form -->
@@ -551,9 +552,10 @@
                     <input type="text" placeholder="Name" class="p-3 border w-full">
                     <input type="text" placeholder="Phone" class="p-3 border w-full">
                     <input type="email" placeholder="Email" class="p-3 border w-full">
-                    <input type="date" placeholder="Date" class="p-3 border w-full">
+                    <input type="text" placeholder="Address" class="p-3 border w-full">
                 </div>
-                <textarea placeholder="Message to us" class="p-3 border w-full h-24"></textarea>
+                <input type="file" accept="image/*" class="p-3 border w-full custom-file-input">
+                <textarea placeholder="Tell us about your project" class="p-3 border w-full h-24"></textarea>
                 <button class="w-full bg-yellow-500 text-white font-semibold py-3 hover:bg-yellow-600 transition">
                     Get Your Quote in 1 Hour!
                 </button>
@@ -587,7 +589,6 @@
             </div>
         </div>
     </div>
-
     <!-- Consultation Button -->
     <button id="consultationBtn"
         class="w-[180px] md:w-[251px] shadow-lg py-3 md:py-5 font-medium text-base leading-6 text-black bg-[#FEC813] text-center fixed capitalize bottom-10 right-10 z-20">
