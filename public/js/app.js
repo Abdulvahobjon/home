@@ -23,7 +23,6 @@ function headerMenu() {
     header.classList.toggle("backdrop-blur", isOpen);
 
     if (window.innerWidth <= 450) {
-      console.log(isOpen);
       document.querySelector('html').style.overflow = isOpen ? 'hidden' : null;
     }
   }
