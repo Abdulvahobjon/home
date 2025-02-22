@@ -22,6 +22,11 @@ function headerMenu() {
     header.classList.toggle("bg-black/90", isOpen);
     header.classList.toggle("shadow-lg", isOpen);
     header.classList.toggle("backdrop-blur", isOpen);
+
+    if (window.innerWidth <= 450) {
+      console.log(isOpen);
+      document.querySelector('html').style.overflow = isOpen ? 'hidden' : null;
+    }
   }
 
   // ✅ `checkbox` holati o‘zgarganda ishlaydi
