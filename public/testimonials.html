@@ -32,6 +32,75 @@
 
     <link rel="icon" href="./img/imir-logo.jpg" type="image/x-icon">
 
+    <style>
+        .swiper-slide {
+            height: auto !important;
+
+            &>div {
+                height: 100%;
+            }
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            color: white;
+            font-size: 12px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            --swiper-navigation-size: 33px;
+            min-width: 33px;
+            outline: none;
+            transition: all .2s;
+            outline: none;
+        }
+
+        .swiper-button-disabled {
+            opacity: 0 !important;
+            visibility: 0;
+        }
+
+        .filter-btn {
+            padding: 5px 15px;
+            position: relative;
+            border-radius: 20px;
+            user-select: none;
+            transition: all .3s;
+        }
+
+        .filter-btn:hover {
+            background-color: rgb(17, 17, 17, 0.05);
+        }
+
+        .filter-btn::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 2px;
+            background-color: transparent;
+            transition: all .2s;
+        }
+
+        .filter-btn.active::after {
+            background-color: #FEC813;
+        }
+
+        .shadow-custom {
+            --tw-shadow: 0 5px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        @media screen and (max-width: 520px) {
+            .filter-btn {
+                padding: 3px 12px;
+                font-size: 14px;
+                border-radius: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -392,7 +461,148 @@
         </section>
     </div>
 
-    
+    <section class="pt-[60px] max-sm:pt-[40px] max-[425px]:pt-14">
+        <div class="max-w-[1195px] w-full mx-auto px-5 max-xl:max-w-[813px]">
+            <div class="flex gap-5 flex-col-reverse items-center">
+                <div class="">
+                    <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
+                        class="text-5xl leading-[58px] text-[#000000] font-medium  max-sm:text-4xl text-center max-[425px]:text-3xl">
+                        What Our Users Say</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative pt-[40px] pb-[100px]">
+        <div class="max-w-[1200px] w-full mx-auto px-5 max-xl:max-w-[813px] overflow-hidden">
+            <div class="flex justify-center mb-10 gap-0 sm:gap-2">
+                <button class="filter-btn active" data-filter="all">All Reviews <span
+                        class="font-bold">5.0</span></button>
+                <button class="filter-btn flex gap-3 items-center" data-filter="google"><img
+                        src="./img/icons/google-small.png" class="h-full max-h-5" alt="google icon"> Google <span
+                        class="font-bold">5.0</span></button>
+                <button class="filter-btn flex gap-3 items-center" data-filter="yelp"><img
+                        src="./img/icons/yelp-small.png" class="h-full max-h-5" alt="yelp icon"> Yelp <span
+                        class="font-bold">5.0</span></button>
+            </div>
+            <div class="swiper-container relative">
+                <div class="swiper-wrapper py-5">
+                    <div class="swiper-slide" data-category="google">
+                        <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
+                            <div>
+                                <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                                <p class="text-lg">
+                                    I am extremely satisfied with the customer service provided by ICal Construction.
+                                    They
+                                    were friendly, approachable, and
+                                    always willing to address any questions or concerns.
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <div
+                                    class="w-12 overflow-hidden h-12 bg-red-500 rounded-full mx-auto flex items-center justify-center text-white text-xl">
+                                    <img src="./img/testimonial/lucas.png" alt="user image">
+                                </div>
+                                <p class="font-bold mt-2">Lucas Bonnet</p>
+                                <p class="text-gray-500 text-sm">a year ago</p>
+                                <p class="text-green-500 font-bold mt-3">
+                                    <img src="./img/icons/google.png" class="max-w-20 m-auto" alt="google icon">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-category="yelp">
+                        <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
+                            <div>
+                                <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                                <p class="text-lg">
+                                    Extremely knowledgeable about all types of stone. We selected porcelain for our
+                                    kitchen
+                                    countertops which isn't easy to
+                                    work with, but their fabricator, Neri, was excellent. He was confident, deliberate,
+                                    unwilling to compromise his process
+                                    for quicker results. The team was clean and efficient but took their time to deliver
+                                    a
+                                    great product. Highly recommend
+                                    working with them.
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <div
+                                    class="w-12 overflow-hidden h-12 bg-red-500 rounded-full mx-auto flex items-center justify-center text-white text-xl">
+                                    <img src="./img/testimonial/jaya.png" alt="user image">
+                                </div>
+                                <p class="font-bold mt-2">jaya y.</p>
+                                <p class="text-gray-500 text-sm">Dec 28, 2024</p>
+                                <p class="text-green-500 font-bold mt-3">
+                                    <img src="./img/icons/yelp.png" class="max-w-20 m-auto" alt="yelp icon">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-category="google">
+                        <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
+                            <div>
+                                <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                                <p class="text-lg">
+                                    I Cal Construction completed my kitchen and bathroom remodel from old style to a
+                                    warm
+                                    space, 100% satisfaction using
+                                    high-quality quartz and porcelain materials. I Cal completed the job almost in 2
+                                    weeks.
+                                    Very clean to work.
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <div
+                                    class="w-12 overflow-hidden h-12 bg-red-500 rounded-full mx-auto flex items-center justify-center text-white text-xl">
+                                    <img src="./img/testimonial/carlos.png" alt="user image">
+                                </div>
+                                <p class="font-bold mt-2">Carlos Maleville</p>
+                                <p class="text-gray-500 text-sm">a year ago</p>
+                                <p class="text-green-500 font-bold mt-3">
+                                    <img src="./img/icons/google.png" class="max-w-20 m-auto" alt="google icon">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-category="google">
+                        <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
+                            <div>
+                                <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                                <p class="text-lg">
+                                    This company provided excellent service and follow-up from day 1, thanks to
+                                    Michelle,
+                                    the representative. She was always
+                                    so polite and responsive to all of our questions and concerns. The company sent us
+                                    an
+                                    estimate and stuck by that
+                                    estimate right down to the penny. The workmanship, too, was superb and the craftsmen
+                                    were always polite, friendly, and
+                                    fastidious about their work. I would highly recommend this company.
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <div
+                                    class="w-12 overflow-hidden h-12 bg-red-500 rounded-full mx-auto flex items-center justify-center text-white text-xl">
+                                    <img src="./img/testimonial/zaccario.png" alt="user image">
+                                </div>
+                                <p class="font-bold mt-2">Zaccario Tramontana</p>
+                                <p class="text-gray-500 text-sm">2 months ago</p>
+                                <p class="text-green-500 font-bold mt-3">
+                                    <img src="./img/icons/google.png" class="max-w-20 m-auto" alt="google icon">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-button-prev swiper-button-disabled bg-[#FEC813] shadow-md aspect-square rounded-full">
+                </div>
+                <div class="swiper-button-next bg-[#FEC813] shadow-md aspect-square rounded-full"></div>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-[#FEC813] pt-[130px] px-6 md:px-6 lg:px-24 text-[#4d3c07]">
         <div
@@ -539,69 +749,37 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script type="text/javascript">
-        $('.ba-slider').beforeAfter();
-
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.5, // Har safar nechta kartani ko‘rsatish
-            spaceBetween: 20, // Kartalar orasidagi masofa
-            loop: true, // Cheksiz aylanish
-            speed: 12000, // Harakat tezligi
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            spaceBetween: 40,
             autoplay: {
-                delay: 1, // Kechikishsiz
-                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
+                delay: 3000,
             },
-            freeMode: true, // Erkin harakat
-            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
-            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
-            breakpoints: {
-                320: { // Mobil (320px dan katta)
-                    slidesPerView: 1.2, // 1 ta karta
-                    spaceBetween: 20
-                },
-                1024: { // Katta ekran (1024px dan katta)
-                    slidesPerView: 2, // 3 ta karta
-                    spaceBetween: 20
-                },
-                1440: { // Juda katta ekranlar (1440px dan katta)
-                    slidesPerView: 3.5, // 4 ta karta
-                    spaceBetween: 25
-                }
-            }
-        });
-        var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 1.5, // Har safar nechta kartani ko‘rsatish
-            spaceBetween: 20, // Kartalar orasidagi masofa
-            loop: true, // Cheksiz aylanish
-            speed: 12000, // Harakat tezligi
-            autoplay: {
-                delay: 1, // Kechikishsiz
-                disableOnInteraction: false, // Foydalanuvchi to‘xtatsa ham davom etadi
-                reverseDirection: true, // O‘ng tarafga aylanish
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
-            freeMode: {
-                enabled: true,
-                momentum: false,
-            },
-            allowTouchMove: false, // Sichqoncha va barmoq yordamida harakatni bloklash
-            simulateTouch: false, // Mobil qurilmalarda touch harakatini o‘chirish
-            breakpoints: {
-                320: { // Mobil (320px dan katta)
-                    slidesPerView: 1.2, // 1 ta karta
-                    spaceBetween: 20
-                },
-                1024: { // Katta ekran (1024px dan katta)
-                    slidesPerView: 2, // 3 ta karta
-                    spaceBetween: 20
-                },
-                1240: { // Juda katta ekranlar (1440px dan katta)
-                    slidesPerView: 3.5, // 4 ta karta
-                    spaceBetween: 25
-                }
-            }
         });
 
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(button => {
+                    button.classList.remove('active');
+                })
+                button.classList.add('active');
 
+                const filter = button.getAttribute('data-filter');
+                document.querySelectorAll('.swiper-slide').forEach(slide => {
+                    if (filter === 'all' || slide.getAttribute('data-category') === filter) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+                swiper.update();
+                swiper.slideTo(0);
+            });
+        });
     </script>
 
     <script src="./js/app.js"></script>
