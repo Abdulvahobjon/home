@@ -18,7 +18,6 @@ function headerMenu() {
     overlay.classList.toggle("right-0", isOpen);
     overlay.classList.toggle("right-[-100%]", !isOpen);
 
-    document.body.classList.toggle("overflow-hidden", isOpen);
     header.classList.toggle("bg-black/90", isOpen);
     header.classList.toggle("shadow-lg", isOpen);
     header.classList.toggle("backdrop-blur", isOpen);

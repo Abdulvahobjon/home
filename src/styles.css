@@ -12,12 +12,10 @@ img {
 }
 
 body {
-  overflow-x: hidden;
   height: 100%;
 }
 
-html:has(#overlayForm:not(.hidden)),
-body:has(#overlayForm:not(.hidden)) {
+html:has(#overlayForm:not(.hidden)) {
   overflow: hidden;
   height: 100%;
 }
