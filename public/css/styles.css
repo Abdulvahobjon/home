@@ -1790,12 +1790,17 @@ img {
 }
 
 .headerLink {
+  display: inline-block;
+  width: 100%;
+}
+
+.headerLink>span {
   position: relative;
   padding-bottom: 2px;
   overflow: hidden;
 }
 
-.headerLink::before {
+.headerLink>span::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1807,7 +1812,7 @@ img {
 
 }
 
-.headerLink:hover::before {
+.headerLink:hover>span::before {
   left: 0;
 }
 
