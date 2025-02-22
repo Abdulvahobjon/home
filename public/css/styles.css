@@ -1762,6 +1762,7 @@ html {
 
 body {
   height: 100%;
+  overflow-x: clip;
 }
 
 html:has(#overlayForm:not(.hidden)) {
