@@ -35,10 +35,14 @@
     <style>
         .swiper-slide {
             height: auto !important;
+        }
 
-            &>div {
-                height: 100%;
-            }
+        .swiper-slide>div {
+            height: 100%;
+        }
+
+        .swiper-text {
+            font-size: 1.125rem;
         }
 
         .swiper-button-next::after,
@@ -98,6 +102,10 @@
                 padding: 3px 12px;
                 font-size: 14px;
                 border-radius: 15px;
+            }
+
+            .swiper-text {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -478,11 +486,11 @@
             <div class="flex justify-center mb-10 gap-0 sm:gap-2">
                 <button class="filter-btn active" data-filter="all">All Reviews <span
                         class="font-bold">5.0</span></button>
-                <button class="filter-btn flex gap-3 items-center" data-filter="google"><img
-                        src="./img/icons/google-small.png" class="h-full max-h-5" alt="google icon"> Google <span
+                <button class="filter-btn flex gap-1 min-[450px]:gap-3 items-center" data-filter="google"><img
+                        src="./img/icons/google-small.png" class="h-full max-h-4 min-[450px]:max-h-5" alt="google icon"> Google <span
                         class="font-bold">5.0</span></button>
-                <button class="filter-btn flex gap-3 items-center" data-filter="yelp"><img
-                        src="./img/icons/yelp-small.png" class="h-full max-h-5" alt="yelp icon"> Yelp <span
+                <button class="filter-btn flex gap-1 min-[450px]:gap-3 items-center" data-filter="yelp"><img
+                        src="./img/icons/yelp-small.png" class="h-full max-h-4 min-[450px]:max-h-5" alt="yelp icon"> Yelp <span
                         class="font-bold">5.0</span></button>
             </div>
             <div class="swiper-container relative">
@@ -491,7 +499,7 @@
                         <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
                             <div>
                                 <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                                <p class="text-lg">
+                                <p class="swiper-text">
                                     I am extremely satisfied with the customer service provided by ICal Construction.
                                     They
                                     were friendly, approachable, and
@@ -515,7 +523,7 @@
                         <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
                             <div>
                                 <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                                <p class="text-lg">
+                                <p class="swiper-text">
                                     Extremely knowledgeable about all types of stone. We selected porcelain for our
                                     kitchen
                                     countertops which isn't easy to
@@ -544,7 +552,7 @@
                         <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
                             <div>
                                 <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                                <p class="text-lg">
+                                <p class="swiper-text">
                                     I Cal Construction completed my kitchen and bathroom remodel from old style to a
                                     warm
                                     space, 100% satisfaction using
@@ -570,7 +578,7 @@
                         <div class="shadow-custom rounded-lg py-6 px-11 text-center flex flex-col justify-between">
                             <div>
                                 <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                                <p class="text-lg">
+                                <p class="swiper-text">
                                     This company provided excellent service and follow-up from day 1, thanks to
                                     Michelle,
                                     the representative. She was always
